@@ -23,6 +23,7 @@ export default function AirportHomepage() {
             headers: {
                 "Content-Type": "application/json",
             },
+            next: { revalidate: 1 }
         });
 
         if (!res.ok) {
@@ -41,6 +42,7 @@ export default function AirportHomepage() {
             headers: {
                 "Content-Type": "application/json",
             },
+            next: { revalidate: 1 }
         });
 
         if (!res.ok) {
@@ -55,7 +57,11 @@ export default function AirportHomepage() {
     //For the events section
     const getEvents = useCallback(async () => {
         const res = await fetch(eventsUrl, {
-
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            next: { revalidate: 1 }
         });
 
         if (!res.ok) {
