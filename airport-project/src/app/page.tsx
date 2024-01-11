@@ -25,13 +25,13 @@ export default function AirportHomepage() {
             },
         });
 
-        if (!res.ok) {
-            throw new Error("Failed to fetch data");
-        }
-
         const data = await res.json();
 
-        setMinicards(data.body);
+        if (!res.ok) {
+            throw new Error("Failed to fetch data");
+        } else {
+            return setMinicards(data.body);
+        }
     }, [minicardsUrl]);
 
     //For the Plans section
