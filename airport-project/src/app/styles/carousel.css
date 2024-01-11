@@ -212,6 +212,7 @@
     }
 }
 
+#airportCarousel .carousel .control-dots,
 #airportCarousel .carousel .carousel-status {
     display: none;
 }
