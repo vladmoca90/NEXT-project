@@ -13,7 +13,7 @@ import sliderThree from "../../public/images/slider3.jpg";
 export default function HomepageCarousel() {
     return (
         <div id="airportCarousel">
-            <Carousel showArrows={true}>
+            <Carousel showArrows={true} showThumbs={false}>
                 <div>
                     <Image alt="Flight booking" src={flightBooking} />
                     <div className="carousel-content">
