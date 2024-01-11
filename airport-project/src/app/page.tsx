@@ -31,7 +31,7 @@ export default function AirportHomepage() {
 
         const data = await res.json();
 
-        setMinicards(data.body);
+        return setMinicards(data.body);
     }, [minicardsUrl]);
 
     //For the Plans section
