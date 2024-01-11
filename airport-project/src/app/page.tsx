@@ -18,7 +18,12 @@ export default function AirportHomepage() {
 
     // For the minicards section
     const getMinicards = useCallback(async () => {
-        const res = await fetch(minicardsUrl);
+        const res = await fetch(minicardsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");
@@ -31,7 +36,12 @@ export default function AirportHomepage() {
 
     //For the Plans section
     const getPlans = useCallback(async () => {
-        const res = await fetch(plansUrl);
+        const res = await fetch(plansUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");
@@ -44,7 +54,12 @@ export default function AirportHomepage() {
 
     //For the events section
     const getEvents = useCallback(async () => {
-        const res = await fetch(eventsUrl);
+        const res = await fetch(eventsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");
