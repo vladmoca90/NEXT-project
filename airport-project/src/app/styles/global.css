@@ -13,11 +13,11 @@ body button {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.1em;
+    font-size: 1.15em;
     font-weight: 700;
     margin: 0;
     overflow: hidden;
-    padding: .45em .65em .4em;
+    padding: .4em .5em .35em;
     position: relative;
     text-align: center;
     text-decoration: none;
