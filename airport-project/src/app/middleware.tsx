@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server";
 
 // the list of all allowed origins
-const allowedOrigins = [
-    "https://airport-next-new.vercel.app/",
-];
+const allowedOrigins = "https://airport-next-new.vercel.app/";
 
 export function middleware(req: { headers: { get: (arg0: string) => void; }; }) {
     // retrieve the current response
