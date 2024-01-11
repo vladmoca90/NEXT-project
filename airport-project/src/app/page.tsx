@@ -22,6 +22,8 @@ export default function AirportHomepage() {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "",
+                "Access-Control-Allow-Methods": "GET,DELETE,PATCH,POST,PUT",
             },
         });
 
@@ -31,7 +33,7 @@ export default function AirportHomepage() {
 
         const data = await res.json();
 
-        return setMinicards(data.body);
+        setMinicards(data.body);
     }, [minicardsUrl]);
 
     //For the Plans section
