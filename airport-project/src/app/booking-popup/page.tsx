@@ -50,12 +50,16 @@ export default function BookingPopUp() {
             </div>
             <div className="booking-content">
                 <div id="bookingSurname" className="booking-input-container">
-                    <label>Surname:</label>
-                    <input placeholder="Enter your surname" type="text" name="Surname" onChange={onSurname} value={surnameText} />
+                    <form>
+                        <label>Surname:</label>
+                        <input placeholder="Enter your surname" type="text" name="Surname" onChange={onSurname} value={surnameText} />
+                    </form>
                 </div>
                 <div id="bookingCode" className="booking-input-container">
-                    <label>Booking code:</label>
-                    <input placeholder="Enter booking code" type="text" name="Booking code" onChange={onBooking} value={bookingText} />
+                    <form>
+                        <label>Booking code:</label>
+                        <input placeholder="Enter booking code" type="text" name="Booking code" onChange={onBooking} value={bookingText} />
+                    </form>
                 </div>
             </div>
             <div className="booking-bottom">

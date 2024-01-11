@@ -148,7 +148,7 @@
     }
 }
 
-#bookingPopUp .booking-content .booking-input-container {
+#bookingPopUp .booking-content .booking-input-container>form {
     align-items: baseline;
     display: flex;
     justify-content: space-between;
@@ -160,7 +160,7 @@
     text-align: center;
 }
 
-#bookingPopUp .booking-btn-container>.btn-booking {
+#bookingPopUp .booking-btn-container .btn-booking {
     font-size: 1.2em;
     font-weight: 500;
     margin: .75em 0;

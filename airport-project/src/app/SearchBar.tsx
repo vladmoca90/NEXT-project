@@ -40,8 +40,10 @@ export default function AirportSearchBar() {
             </div>
             <div className="search-bar-content">
                 <div id="searchBarAirline" className="search-bar-input">
-                    <label>Search airline or flight number:</label>
-                    <input placeholder="Search airline or flight number" type="text" name="airline" onChange={onFlightOrAirline} value={airlineOrFlightText} />
+                    <form>
+                        <label>Search airline or flight number:</label>
+                        <input placeholder="Search airline or flight number" type="text" name="airline" onChange={onFlightOrAirline} value={airlineOrFlightText} />
+                    </form>
                     <ul id="searchBarOptions">
                         {
                             results.map((result, index) => {
