@@ -1,0 +1,3 @@
+https://blog.logrocket.com/using-cors-next-js-handle-cross-origin-requests/#:~:text=To%20avoid%20that%20issue%2C%20you,make%20requests%20to%20your%20Next. 
+
+https://blog.logrocket.com/using-cors-next-js-handle-cross-origin-requests/#:~:text=To%20avoid%20that%20issue%2C%20you,make%20requests%20to%20your%20Next.
