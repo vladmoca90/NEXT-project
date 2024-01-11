@@ -8,6 +8,13 @@
 
 #airportFlights #flightsTabs {
   margin: 1em auto;
+  width: 96%;
+}
+
+@media all and (min-width: 768px) {
+  #airportFlights #flightsTabs {
+    width: 100%;
+  }
 }
 
 #airportFlights .responsiveTable tbody tr {
