@@ -30,7 +30,7 @@ export default function AirportHomepage() {
 
         // const data = await res.json();
 
-        setMinicards(data);
+        setMinicards(data.body);
     }, [minicardsUrl]);
 
 //     useEffect(() => {
