@@ -30,6 +30,16 @@ body #mainContent {
     padding: 0;
 }
 
+body #mainContent .top-banner h1 {
+    width: 95%;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .top-banner h1 {
+        width: 99%;
+    }
+}
+
 body #mainContent .top-banner {
     align-items: center;
     display: flex;
