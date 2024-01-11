@@ -34,15 +34,6 @@ export default function AirportHomepage() {
         setMinicards(data.body);
     }, [minicardsUrl]);
 
-//     useEffect(() => {
-//     fetch(carsShowroomUrl)
-//         .then((response) => response)
-//         .then(e => e.json())
-//         .then(e => setCars(e as Car[]))
-//         .catch(error =>
-//             setError(error))
-// }, [carsShowroomUrl]);
-
     //For the Plans section
     const getPlans = useCallback(async () => {
         const res = await fetch(plansUrl, {
