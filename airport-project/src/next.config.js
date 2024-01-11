@@ -5,7 +5,7 @@ const nextConfig = {
         return [
             {
                 // matching all API routes
-                source: "/api/**/:path*",
+                source: "/api/**/*",
                 headers: [
                     { key: "Cache-Control", value: "s-maxage=1, stale-while-revalidate=59"},
                     { key: "Access-Control-Allow-Credentials", value: "true" },
