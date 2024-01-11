@@ -440,8 +440,8 @@ body #mainContent .card-full-container--right>div {
     cursor: pointer;
     display: flex;
     height: 100px;
-    margin: 10px;
-    padding: 0;
+    margin: .6em;
+    padding: 0 .25em;
     text-align: center;
     transition: linear .5s all;
     width: 42%;
@@ -449,6 +449,7 @@ body #mainContent .card-full-container--right>div {
 
 @media all and (min-width: 768px) {
     body #mainContent .card-full-container--right>div {
+        padding: 0;
         width: 43%;
     }
 }
