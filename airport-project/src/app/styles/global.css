@@ -17,7 +17,7 @@ body button {
     font-weight: 700;
     margin: 0;
     overflow: hidden;
-    padding: .5em .4em .45em;
+    padding: .5em .65em .45em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -61,6 +61,7 @@ body #mainContent .top-banner {
 }
 
 @media all and (min-width: 768px) {
+
     body .btn,
     body button {
         font-size: .85em;
@@ -72,6 +73,7 @@ body #mainContent .top-banner {
 }
 
 @media all and (min-width: 992px) {
+
     body .btn,
     body button {
         font-size: .95em;
@@ -90,6 +92,7 @@ body #mainContent .top-banner {
 }
 
 @media all and (max-width: 991px) {
+
     body .btn-check:checked+.btn,
     body .btn:not(.btn-check)+.btn:active,
     body .btn:first-child:active,
@@ -162,7 +165,7 @@ body #mainContent h6 {
 }
 
 body #mainContent p {
-    font-size: .95em;
+    font-size: 1em;
     line-height: 160%;
 }
 
@@ -204,6 +207,7 @@ body #mainContent .heading-subtitle {
 }
 
 @media all and (min-width: 992px) {
+
     body #mainContent .heading-title,
     body #mainContent .heading-subtitle {
         margin: 1.35em 0 1em;
@@ -228,13 +232,7 @@ body #mainContent .heading-title {
 }
 
 body #mainContent .heading-subtitle {
-    font-size: 1.3em;
-}
-
-@media all and (min-width: 768px) {
-    body #mainContent .heading-subtitle {
-        font-size: 1.4em;
-    }
+    font-size: 1.5em;
 }
 
 @media all and (min-width: 992px) {
@@ -501,6 +499,7 @@ body #airportPrepare .cards {
 }
 
 @media all and (min-width: 768px) {
+
     body .homepage-container,
     body .homepage-news-container,
     body .card-full-container>div,
@@ -514,6 +513,7 @@ body #airportPrepare .cards {
 }
 
 @media all and (min-width: 992px) {
+
     body .homepage-container,
     body .homepage-news-container,
     body .card-full-container>div,
@@ -527,6 +527,7 @@ body #airportPrepare .cards {
 }
 
 @media all and (min-width: 1200px) {
+
     body .homepage-container,
     body .homepage-news-container,
     body .card-full-container>div,
@@ -540,6 +541,7 @@ body #airportPrepare .cards {
 }
 
 @media all and (min-width: 1400px) {
+
     body .homepage-container,
     body .homepage-news-container,
     body .card-full-container>div,
@@ -579,6 +581,15 @@ body #mainContent .bottom-container {
     padding: 2em 0;
 }
 
-body #mainContent .bottom-container .btn {
+body #mainContent .bottom-container .btn,
+#airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
+    font-size: 1.25em;
     width: 66%;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .bottom-container .btn,
+    #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
+        width: auto;
+    }
 }
