@@ -18,17 +18,18 @@ export default function AirportHomepage() {
 
     // For the minicards section
     const getMinicards = useCallback(async () => {
-        const data = await fetch(minicardsUrl).then(res => {
-            if(res.ok) {
-                return res.json();
-            }
+        const res = await fetch(minicardsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
         });
 
-        // if (!res.ok) {
-        //     throw new Error("Failed to fetch data");
-        // }
+        if (!res.ok) {
+            throw new Error("Failed to fetch data");
+        }
 
-        // const data = await res.json();
+        const data = await res.json();
 
         setMinicards(data.body);
     }, [minicardsUrl]);
