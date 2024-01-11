@@ -20,7 +20,6 @@ export default function AirportHomepage() {
     const getMinicards = useCallback(async () => {
         const res = await fetch(minicardsUrl, {
             method: "GET",
-            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json",
             },
@@ -39,7 +38,6 @@ export default function AirportHomepage() {
     const getPlans = useCallback(async () => {
         const res = await fetch(plansUrl, {
             method: "GET",
-            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json",
             },
@@ -58,7 +56,6 @@ export default function AirportHomepage() {
     const getEvents = useCallback(async () => {
         const res = await fetch(eventsUrl, {
             method: "GET",
-            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json",
             },
