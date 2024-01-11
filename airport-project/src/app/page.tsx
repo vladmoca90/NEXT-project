@@ -27,8 +27,6 @@ export default function AirportHomepage() {
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");
-        } else {
-            return res;
         }
 
         const data = await res.json();
