@@ -22,6 +22,7 @@ export default function AirportHomepage() {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
+                "Access-Control-Allow-Origin:": "https://airport-next-new.vercel.app/",
             },
         });
 
