@@ -17,7 +17,7 @@ export default function HomepageCarousel() {
                 <div>
                     <Image alt="Flight booking" src={flightBooking} />
                     <div className="carousel-content">
-                        <p className="carousel-heading">See your flight details</p>
+                        <p className="carousel-heading">See your flight details test</p>
                         <p className="carousel-subheading">Please enter your name and booking reference.</p>
                         <Popup position="right center" trigger={<button className="carousel-link btn">Check your booking</button>}>
                             <BookingPopUp />
