@@ -1,0 +1,213 @@
+@import "./fonts.css";
+
+.disabled {
+    opacity: .66;
+    pointer-events: none;
+}
+
+.popup-overlay {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.popup-content,
+#bookingPopUp {
+    left: 0 !important;
+    margin: 0 auto !important;
+    right: 0 !important;
+}
+
+@media all and (min-width: 768px) {
+
+    .popup-content,
+    #bookingPopUp {
+        top: 10% !important;
+    }
+}
+
+#bookingPopUp {
+    background: #fff;
+    padding: 1.75em 1.85em 1.25em;
+    position: absolute;
+    width: 295px;
+    z-index: 100;
+}
+
+@media all and (min-width: 600px) {
+    #bookingPopUp {
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp {
+        padding: 1.4em 1.75em 1.75em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #bookingPopUp {
+        width: 480px;
+    }
+}
+
+#bookingPopUp .booking-title {
+    color: #2b0b50;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp .booking-title {
+        font-size: 1.5em;
+    }
+}
+
+#bookingPopUp .booking-title:after {
+    background: #a0157c;
+    bottom: -.33em;
+    content: "";
+    height: 3px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 195px;
+    z-index: 10;
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp .booking-title:after {
+        width: 230px;
+    }
+}
+
+#bookingPopUp .booking-content {
+    margin: 2.5em 0 1.5em;
+}
+
+#bookingPopUp .booking-content label {
+    color: #2b0b50;
+    font-size: .9em;
+    font-weight: 600;
+    margin-bottom: .5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 600px) {
+    #bookingPopUp .booking-content label {
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp .booking-content label {
+        font-size: 1em;
+        margin-right: .5em;
+        width: auto;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #bookingPopUp .booking-content label {
+        font-size: 1.25em;
+    }
+}
+
+#bookingPopUp .booking-content input {
+    border: 1px solid #e6e6e6;
+    color: #2b0b50;
+    font-size: 1em;
+    font-weight: 400;
+    height: 45px;
+    padding-left: .5em;
+    width: 50%;
+}
+
+@media all and (min-width: 600px) {
+    #bookingPopUp .booking-content input {
+        width: 220px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp .booking-content input {
+        width: 200px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #bookingPopUp .booking-content input {
+        width: 240px;
+    }
+}
+
+#bookingPopUp .booking-content .booking-input-container {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+#bookingPopUp .booking-bottom {
+    margin: 1.65em 0 0;
+    text-align: center;
+}
+
+#bookingPopUp .booking-btn-container>.btn-booking {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: .75em 0;
+    outline: 0;
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp .booking-btn-container>.btn-booking {
+        font-size: 1.1em;
+        margin: 0;
+        width: auto;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #bookingPopUp .booking-btn-container>.btn-booking {
+        font-size: 1em;
+    }
+}
+
+#bookingPopUp .booking-btn-container>.btn-booking {
+    background: #a0157c;
+    border: 0 !important;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: .65em 1.35em .55em;
+    text-transform: uppercase;
+    transition: linear .5s all;
+    width: auto;
+}
+
+@media all and (min-width: 768px) {
+    #bookingPopUp .booking-btn-container>.btn-booking {
+        padding: .65em 1.5em .55em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #bookingPopUp .booking-btn-container>.btn-booking {
+        font-size: 1.2em;
+    }
+
+    #bookingPopUp .booking-btn-container>.btn-booking:hover {
+        background: #6700cfd0;
+        color: #fff;
+    }
+}

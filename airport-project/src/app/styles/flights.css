@@ -1,0 +1,136 @@
+@import "./fonts.css";
+
+#airportFlights .airportFlights-banner {
+  background: url("/images/airportFlights-banner.jpg") no-repeat center center;
+  background-position-y: 28%;
+  background-size: cover;
+}
+
+#airportFlights #flightsTabs {
+  margin: 1em auto;
+}
+
+#airportFlights .responsiveTable tbody tr {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+}
+
+#airportFlights .table th {
+  text-transform: uppercase;
+}
+
+#airportFlights .table tr,
+#airportFlights .table th,
+#airportFlights .table td {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  #airportFlights .table tr,
+  #airportFlights .table th,
+  #airportFlights .table td {
+    font-size: .85em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #airportFlights .table tr,
+  #airportFlights .table th,
+  #airportFlights .table td {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  #airportFlights .table tr,
+  #airportFlights .table th,
+  #airportFlights .table td {
+    font-size: 1.1em;
+  }
+}
+
+#airportFlights .nav-tabs .nav-link {
+  color: #a0157c;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 1em 1.5em;
+  transition: linear .5s all;
+}
+
+@media all and (min-width: 768px) {
+  #airportFlights .nav-tabs .nav-link {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #airportFlights .nav-tabs .nav-link {
+    font-size: 1.25em;
+    padding: 1.5em 3em;
+  }
+
+  #airportFlights .nav-tabs .nav-link:hover {
+    background: #fff;
+    color: #a0157c;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  #airportFlights .nav-tabs .nav-link {
+    font-size: 1.5em;
+    padding: 1em 3em;
+  }
+}
+
+#airportFlights .nav-tabs .nav-link.active {
+  color: #2b0b50;
+}
+
+#airportFlights .tab-content {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#airportFlights .table> :not(caption)>*>* {
+  padding: .65em .5em;
+  vertical-align: middle;
+}
+
+@media all and (min-width: 768px) {
+  #airportFlights .table> :not(caption)>*>* {
+    padding: 1.2em .3em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #airportFlights .table> :not(caption)>*>* {
+    padding: 1.5em 0;
+  }
+}
+
+#airportFlights .airline-tailfin {
+  margin-right: .4em;
+  width: 2.25em;
+}
+
+#airportFlights .airline-status {
+  font-weight: 700;
+}
+
+#airportFlights .airline-status--onTime {
+  color: #0b7300;
+}
+
+#airportFlights .airline-status--delayed {
+  color: #e0b700;
+}
+
+#airportFlights .airline-status--cancelled {
+  color: #980300;
+}
+
+#airportFlights .airline-status--notAvailable {
+  color: #222;
+}

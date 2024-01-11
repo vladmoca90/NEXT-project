@@ -1,0 +1,318 @@
+@import "./fonts.css";
+
+#airportCarousel .carousel .slider-wrapper {
+    height: auto;
+}
+
+@media all and (min-width: 768px) {
+    #airportCarousel .carousel .slider-wrapper {
+        height: 275px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #airportCarousel .carousel .slider-wrapper {
+        height: 385px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #airportCarousel .carousel .slider-wrapper {
+        height: 450px;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    #airportCarousel .carousel .slider-wrapper {
+        height: 520px;
+    }
+}
+
+@media all and (min-width: 1800px) {
+    #airportCarousel .carousel .slider-wrapper {
+        height: 575px;
+    }
+}
+
+#airportCarousel .carousel .thumbs-wrapper {
+    margin: 0;
+}
+
+#airportCarousel .carousel .slide {
+    position: relative;
+}
+
+#airportCarousel .carousel .slide .carousel-content {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 12%;
+    width: 90%;
+}
+
+@media all and (min-width: 480px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        top: 2em;
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        left: 11%;
+        right: auto;
+        text-align: left;
+        top: 1.25em;
+        width: 550px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        top: 2em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        left: 10%;
+        top: 4em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        left: 16%;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        left: 20%;
+        top: 7.5em;
+        width: 800px;
+    }
+}
+
+@media all and (min-width: 1700px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        top: 9em;
+    }
+}
+
+@media all and (min-width: 1900px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        left: 25%;
+    }
+}
+
+#airportCarousel .carousel .slide .carousel-content p {
+    color: #fff;
+}
+
+#airportCarousel .carousel .slide .carousel-content .carousel-heading {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 600px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-heading {
+        font-size: 1.75em;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-heading {
+        font-size: 2em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-heading {
+        font-size: 2.5em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-heading {
+        font-size: 3em;
+    }
+}
+
+#airportCarousel .carousel .slide .carousel-content .carousel-subheading {
+    font-size: .95em;
+    margin-bottom: .5em;
+}
+
+@media all and (min-width: 600px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-subheading {
+        font-size: 1.25em;
+        margin-bottom: .75em;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-subheading {
+        font-size: 1.4em;
+        margin-bottom: .5em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-subheading {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-subheading {
+        font-size: 1.9em;
+    }
+}
+
+#airportCarousel .carousel .slide .carousel-content .carousel-link {
+    border: 0;
+    font-size: .9em;
+    padding: .4em 1em;
+}
+
+@media all and (min-width: 480px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-link {
+        padding: .45em 1em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-link {
+        padding: .6em 1.5em;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-link {
+        font-size: 1.1em;
+        padding: .5em 1.4em .55em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-link {
+        font-size: 1.2em;
+        padding: .6em 1.4em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #airportCarousel .carousel .slide .carousel-content .carousel-link {
+        font-size: 1.3em;
+    }
+}
+
+#airportCarousel .carousel .control-dots {
+    bottom: 0;
+}
+
+@media all and (min-width: 600px) {
+    #airportCarousel .carousel .control-dots {
+        bottom: 1em;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #airportCarousel .carousel .control-dots {
+        bottom: 3.5em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #airportCarousel .carousel .control-dots {
+        bottom: 4em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #airportCarousel .carousel .control-dots {
+        bottom: 5.5em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #airportCarousel .carousel .control-dots {
+        bottom: 6.5em;
+    }
+}
+
+#airportCarousel .carousel .control-dots .dot {
+    color: #fff;
+    height: 12px;
+    width: 12px;
+}
+
+#airportCarousel .carousel .control-dots .dot.selected {
+    color: #2b0b50;
+}
+
+#airportCarousel .carousel .thumbs.animated,
+#airportCarousel .carousel .carousel-status {
+    display: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: transparent !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 16px solid #fff !important;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 16px solid #fff !important;
+}
+
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+    border-top: 13px solid transparent !important;
+    border-bottom: 13px solid transparent !important;
+}
+
+.carousel .slide img {
+    height: auto;
+}
+
+@media all and (min-width: 768px) {
+    .carousel .control-next.control-arrow {
+        right: 20px !important;
+    }
+
+    .carousel .control-prev.control-arrow {
+        left: 20px !important;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .carousel .control-prev.control-arrow:before {
+        border-right: 22px solid #fff !important;
+    }
+
+    .carousel .control-next.control-arrow:before {
+        border-left: 22px solid #fff !important;
+    }
+
+    .carousel .control-next.control-arrow {
+        right: 35px !important;
+    }
+
+    .carousel .control-prev.control-arrow {
+        left: 35px !important;
+    }
+
+    .carousel .control-arrow:before,
+    .carousel.carousel-slider .control-arrow:before {
+        border-top: 18px solid transparent !important;
+        border-bottom: 18px solid transparent !important;
+    }
+}

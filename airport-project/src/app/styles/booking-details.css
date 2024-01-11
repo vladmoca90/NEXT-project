@@ -1,0 +1,164 @@
+.booking-details--not-found {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    display: block;
+    font-size: 1.5em;
+    margin: 8vh auto;
+    max-width: 80%;
+    padding: 1em;
+    text-align: center;
+}
+
+.booking-details--not-found p {
+    color: #df0000;
+    font-weight: 600;
+}
+
+@media all and (min-width: 768px) {
+    .booking-details--not-found {
+        font-size: 1.85em;
+        padding: 1.5em;
+        margin: 20vh auto;
+        max-width: 50%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .booking-details--not-found {
+        font-size: 2em;
+        padding: 2em 1em;
+        width: 40%;
+    }
+}
+
+@media all and (min-width: 1800px) {
+    .booking-details--not-found {
+        width: 27%;
+    }
+}
+
+.booking-details--found {
+    background: hsl(0, 0%, 100%);
+    border: 1px solid #e6e6e6;
+    margin: .75em auto;
+    width: 94%;
+}
+
+@media all and (min-width: 768px) {
+    .booking-details--found {
+        width: 620px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .booking-details--found {
+        width: 680px;
+    }
+}
+
+.booking-airline {
+    align-items: center;
+    display: flex;
+}
+
+.booking-tailfin {
+    margin-right: .33em;
+    max-width: 37px;
+}
+
+.booking-details--found .booking-details-title {
+    color: #2b0b50;
+    display: inline-block;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.booking-details--found>div {
+    margin: 0 auto;
+    padding: .75em 1em;
+}
+
+.booking-details--found .booking-details-title,
+.booking-details--found>div>span {
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    .booking-details--found>.booking-details-middle>span {
+        width: 45%;
+    }
+}
+
+.booking-details--found>.booking-details-middle>span,
+.booking-label {
+    display: block;
+}
+
+.booking-label {
+    color: #2b0b50;
+    font-weight: 600;
+    margin-bottom: .65em;
+    text-transform: uppercase;
+}
+
+.booking-details-middle .booking-label {
+    font-size: .8em;
+}
+
+@media all and (min-width: 768px) {
+    .booking-details-middle .booking-label {
+        font-size: .7em;
+    }
+}
+
+.booking-details--found>.booking-details-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.booking-details--found>.booking-details-middle>span {
+    border-bottom: 1px solid #e6e6e6;
+    margin: .5em 0;
+    padding-bottom: .25em;
+}
+
+.booking-details--found div>span {
+    font-size: 1.25em;
+}
+
+.booking-details--found .booking-details-middle>span:last-of-type {
+    border-bottom: 0;
+    width: 100%;
+}
+
+.booking-details-top,
+.booking-details-bottom {
+    background: #2b0b50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-details-bottom .booking-label {
+    color: #fff;
+    display: inline;
+}
+
+.booking-details-top .booking-surname,
+.booking-details-top .booking-code {
+    font-size: 1.65em;
+}
+
+.booking-details-top .booking-code {
+    font-weight: 600;
+    text-align: right;
+}
+
+.booking-details-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}

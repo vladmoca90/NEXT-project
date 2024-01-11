@@ -1,0 +1,570 @@
+@import "./fonts.css";
+
+body {
+    background: #f8f8f8 !important;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body .btn,
+body button {
+    background: #a0157c;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9em;
+    font-weight: 700;
+    margin: 0;
+    overflow: hidden;
+    padding: .55em .8em .5em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+
+body #mainContent {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body #mainContent .top-banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    min-height: 200px;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .top-banner {
+        min-height: 250px;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body #mainContent .top-banner {
+        min-height: 400px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    body .btn,
+    body button {
+        font-size: .85em;
+    }
+
+    body .btn.btn--large {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    body .btn,
+    body button {
+        font-size: .95em;
+        transition: linear .5s all;
+    }
+
+    body .btn:hover,
+    body button:hover {
+        background: #fff;
+        color: #a0157c;
+    }
+
+    body .btn.btn--large {
+        font-size: 1.25em;
+    }
+}
+
+@media all and (max-width: 991px) {
+    body .btn-check:checked+.btn,
+    body .btn:not(.btn-check)+.btn:active,
+    body .btn:first-child:active,
+    body .btn.active,
+    body .btn.show,
+    body .btn-check:checked+.btn,
+    body :not(.btn-check)+.btn:active,
+    body .btn:first-child:active,
+    body .btn.active,
+    body .btn.show,
+    body .btn:hover {
+        background: #a0157c;
+        color: #fff;
+    }
+}
+
+body .cta {
+    color: #2b0b50;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    position: relative;
+    text-decoration: none;
+}
+
+body .cta:after {
+    background: #a0157c;
+    bottom: -6px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+@media all and (min-width: 992px) {
+    body .cta:hover {
+        color: #a0157c;
+    }
+}
+
+body .card-shadow {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 -1px 15px #cacaca;
+}
+
+body input:focus {
+    outline: 0;
+}
+
+body #mainContent h1,
+body #mainContent h2,
+body #mainContent h3,
+body #mainContent h4,
+body #mainContent h5,
+body #mainContent h6,
+body #mainContent p {
+    margin: 0;
+}
+
+body #mainContent h1,
+body #mainContent h2,
+body #mainContent h3,
+body #mainContent h4,
+body #mainContent h5,
+body #mainContent h6 {
+    color: #2b0b50;
+    font-weight: 700;
+}
+
+body #mainContent p {
+    font-size: .95em;
+    line-height: 160%;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent p {
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body #mainContent p {
+        font-size: 1.1em;
+    }
+}
+
+body #mainContent .content-text {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 1.25em 0;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .content-text {
+        font-size: .82em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    body #mainContent .content-text {
+        font-size: 1em;
+    }
+}
+
+body #mainContent .heading-title,
+body #mainContent .heading-subtitle {
+    margin: 1.25em 0;
+    text-align: center;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .heading-title,
+    body #mainContent .heading-subtitle {
+        margin: 1.35em 0 1em;
+    }
+}
+
+body #mainContent .heading-title {
+    color: #fff;
+    font-size: 1.75em;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .heading-title {
+        font-size: 2.25em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body #mainContent .heading-title {
+        font-size: 2.65em;
+    }
+}
+
+body #mainContent .heading-subtitle {
+    font-size: 1.3em;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .heading-subtitle {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .heading-subtitle {
+        font-size: 1.6em;
+    }
+}
+
+body #mainContent .heading-content {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .heading-content {
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body #mainContent .heading-content {
+        font-size: 1.3em;
+    }
+}
+
+body #mainContent .cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: .5em auto 0;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .cards {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+}
+
+body #mainContent .cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: .5em 0;
+    width: 90%;
+}
+
+@media all and (min-width: 600px) {
+    body #mainContent .cards .card-content {
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .cards .card-content {
+        flex-direction: column;
+        margin: 0;
+        width: 32%;
+    }
+}
+
+body #mainContent .cards .card-content.cards-half-width {
+    width: 90%;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .cards .card-content.cards-half-width {
+        width: 49%;
+    }
+}
+
+body #mainContent .cards .card-content .card-image {
+    height: 200px;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .cards .card-content .card-image {
+        height: 250px;
+    }
+}
+
+body #mainContent .cards .card-content .card-content-text {
+    background: #2b0b50;
+    padding: 1.2em;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .cards .card-content .card-content-text {
+        padding: 1.5em;
+    }
+}
+
+body #mainContent .cards .card-content .content-text {
+    color: #fff;
+}
+
+body #mainContent .card-full-container {
+    padding: 0;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .card-full-container {
+        padding: 1.5em 0;
+    }
+}
+
+body #mainContent .card-full-container>div {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: auto;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .card-full-container>div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+body #mainContent .card-full-container:nth-of-type(2n) {
+    background: rgba(43, 11, 80, .4);
+}
+
+body #mainContent .card-full-container:nth-of-type(2n + 1) {
+    background: rgba(43, 11, 80, .1);
+}
+
+body #mainContent .card-full-container--left,
+body #mainContent .card-full-container--right {
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .card-full-container--left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 35%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .card-full-container--left {
+        width: 25%;
+    }
+}
+
+body #mainContent .card-full-container--left .card-full-title {
+    font-size: 1.35em;
+    font-weight: bold;
+    margin-bottom: .75em;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .card-full-container--left .card-full-title {
+        font-size: 1.5em;
+    }
+}
+
+body #mainContent .card-full-container--left p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .card-full-container--left p {
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body #mainContent .card-full-container--left p {
+        font-size: 1.1em;
+    }
+}
+
+body #mainContent .card-full-container--right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .card-full-container--right {
+        justify-content: space-between;
+        width: 64%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .card-full-container--right {
+        width: 72%;
+    }
+}
+
+body #mainContent .card-full-container--right>div {
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    height: 100px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    transition: linear .5s all;
+    width: 42%;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .card-full-container--right>div {
+        width: 43%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent .card-full-container--right>div {
+        height: 145px;
+        width: 165px;
+    }
+
+    body #mainContent .card-full-container--right>div:hover {
+        cursor: pointer;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body #mainContent .card-full-container--right>div {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+body #mainContent .card-full-container--right span {
+    color: #222;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+    body #mainContent .card-full-container--right span {
+        width: 90%;
+    }
+}
+
+body .homepage-container,
+body .homepage-news-container,
+body .card-full-container>div,
+body .airportGuide-statistics,
+body .airportMaps-text,
+body .airportMaps-section,
+body .airport-shops-cards,
+body #airportFlights #flightsTabs #flightsTabs,
+body #airportPrepare .cards {
+    margin: 0 auto;
+}
+
+@media all and (min-width: 768px) {
+    body .homepage-container,
+    body .homepage-news-container,
+    body .card-full-container>div,
+    body .airportGuide-statistics,
+    body .airportMaps-text,
+    body .airportMaps-section,
+    body #airportFlights #flightsTabs,
+    body #airportPrepare .cards {
+        max-width: 720px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    body .homepage-container,
+    body .homepage-news-container,
+    body .card-full-container>div,
+    body .airportGuide-statistics,
+    body .airportMaps-text,
+    body .airportMaps-section,
+    body #airportFlights #flightsTabs,
+    body #airportPrepare .cards {
+        max-width: 960px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    body .homepage-container,
+    body .homepage-news-container,
+    body .card-full-container>div,
+    body .airportGuide-statistics,
+    body .airportMaps-text,
+    body .airportMaps-section,
+    body #airportFlights #flightsTabs,
+    body #airportPrepare .cards {
+        max-width: 1080px;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    body .homepage-container,
+    body .homepage-news-container,
+    body .card-full-container>div,
+    body .airportGuide-statistics,
+    body .airportMaps-text,
+    body .airportMaps-section,
+    body #airportFlights #flightsTabs,
+    body #airportPrepare .cards {
+        max-width: 1280px;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    body #airportFlights #flightsTabs {
+        max-width: 1480px;
+    }
+}
+
+@media all and (min-width: 1800px) {
+    body #airportFlights #flightsTabs {
+        max-width: 1650px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    body #airportFlights #flightsTabs {
+        max-width: 1800px;
+    }
+}
+
+body>section {
+    background: #f3f3f3;
+}
+
+body #mainContent .bottom-container {
+    margin-top: 1.5em;
+    padding: 2em 0;
+}

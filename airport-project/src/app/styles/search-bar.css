@@ -1,0 +1,189 @@
+@import "./fonts.css";
+
+.disabled {
+    opacity: .66;
+    pointer-events: none;
+}
+
+#searchBar {
+    background: #fff;
+    margin: 1em auto;
+    padding: 1em;
+    position: relative;
+    width: 88%;
+    z-index: 50;
+}
+
+@media all and (min-width: 600px) {
+    #searchBar {
+        width: 450px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #searchBar {
+        margin: -2.85em auto 0;
+        padding: .5em 1.5em 1.85em;
+        width: 550px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #searchBar {
+        padding: 1em 1.5em 1.85em;
+        width: 640px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #searchBar {
+        margin: -5em auto 0;
+    }
+}
+
+#searchBar .search-bar-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchBar .search-bar-top .search-bar-dateTime {
+    align-items: center;
+    color: #2b0b50;
+    display: flex;
+    font-size: 1em;
+    font-weight: 600;
+    justify-content: center;
+}
+
+@media all and (min-width: 768px) {
+    #searchBar .search-bar-top .search-bar-dateTime {
+        font-size: 1.25em;
+    }
+}
+
+#searchBar .search-bar-top .london-img {
+    height: 50px;
+    margin: -.25em .5em 0 0;
+    width: auto;
+}
+
+@media all and (min-width: 768px) {
+    #searchBar .search-bar-top .london-img {
+        margin-right: .85em;
+    }
+}
+
+#searchBar .search-bar-title {
+    color: #2b0b50;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+}
+
+@media all and (min-width: 768px) {
+    #searchBar .search-bar-title {
+        margin-top: .5em;
+    }
+}
+
+#searchBar .search-bar-title:after {
+    background: #a0157c;
+    bottom: .75em;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+@media all and (min-width: 768px) {
+    #searchBar .search-bar-title:after {
+        bottom: .3em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #searchBar .search-bar-title:after {
+        bottom: .35em;
+    }
+}
+
+#searchBar .search-bar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#searchBar .search-bar-content label {
+    color: #2b0b50;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1.25em 0 .4em;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 1400px) {
+    #searchBar .search-bar-content label {
+        font-size: 1.4em;
+    }
+}
+
+#searchBar .search-bar-content input {
+    border: 1px solid #e6e6e6;
+    color: #2b0b50;
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    height: 45px;
+    margin: 0;
+    padding-left: .5em;
+    width: 100%;
+}
+
+@media all and (min-width: 992px) {
+    #searchBar .search-bar-content input {
+        margin: 0 auto;
+    }
+}
+
+#searchBarOptions {
+    background: #fff;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    left: auto;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    width: auto;
+}
+
+@media all and (min-width: 992px) {
+    #searchBarOptions {
+        left: auto;
+    }
+}
+
+#searchBarOptions>li {
+    border-bottom: 1px solid #e6e6e6;
+    list-style: none;
+    padding: 1em;
+}
+
+#searchBarOptions>li a {
+    align-items: center;
+    color: #222;
+    display: flex;
+    font-size: 1.25em;
+    font-weight: 700;
+    justify-content: left;
+    text-decoration: none;
+}
+
+#searchBarOptions>li a img {
+    margin-right: .5em;
+}
