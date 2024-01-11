@@ -568,3 +568,7 @@ body #mainContent .bottom-container {
     margin-top: 1.5em;
     padding: 2em 0;
 }
+
+body #mainContent .bottom-container .btn {
+    width: 66%;
+}
