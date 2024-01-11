@@ -582,15 +582,17 @@ body #mainContent .bottom-container {
     padding: 2em 0;
 }
 
-body #mainContent .bottom-container .btn,
-#airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
-    font-size: 1.25em;
-    width: 66%;
-}
-
-@media all and (min-width: 768px) {
+@media all and (max-width: 599px) {
     body #mainContent .bottom-container .btn,
     #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
-        width: auto;
+        font-size: 1.2em;
+        width: 79%;
+    }
+}
+
+@media all and (max-width: 991px) {
+    body #mainContent .bottom-container .btn,
+    #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
+        width: 45%;
     }
 }
