@@ -11,7 +11,12 @@ export default function AirportMaps() {
     const [maps, setMaps] = useState<HeathrowMap[]>([]);
 
     const getMaps = useCallback(async () => {
-        const res = await fetch(mapsUrl);
+        const res = await fetch(mapsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");
@@ -23,7 +28,12 @@ export default function AirportMaps() {
     }, [mapsUrl]);
 
     const getTerminals = useCallback(async () => {
-        const res = await fetch(terminalsUrl);
+        const res = await fetch(terminalsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");

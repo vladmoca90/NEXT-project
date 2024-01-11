@@ -66,7 +66,12 @@ export default function AirlineInformation({ searchParams }: {
     const [arrivalAirlines, setArrivalAirlines] = useState<Arrival[]>([]);
 
     const getDepartureAirlines = useCallback(async () => {
-        const res = await fetch(departureAirlinesUrl);
+        const res = await fetch(departureAirlinesUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res) {
             throw new Error("Failed to fetch data");
@@ -78,7 +83,12 @@ export default function AirlineInformation({ searchParams }: {
     }, [departureAirlinesUrl]);
 
     const getArrivalAirlines = useCallback(async () => {
-        const res = await fetch(arrivalAirlinesUrl);
+        const res = await fetch(arrivalAirlinesUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res) {
             throw new Error("Failed to fetch data");

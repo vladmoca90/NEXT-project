@@ -24,7 +24,7 @@ import "./styles/shop-and-eat.css";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Airport Project",
+  title: "Airport NEXT Project",
   description: "My personal project",
 }
 

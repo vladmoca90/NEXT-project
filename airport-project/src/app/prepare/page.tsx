@@ -8,7 +8,12 @@ export default function AirportPrepare() {
     const [checkIns, setCheckIns] = useState<CheckIn[]>([]);
 
     const getCheckIns = useCallback(async () => {
-        const res = await fetch(checkInsUrl);
+        const res = await fetch(checkInsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");

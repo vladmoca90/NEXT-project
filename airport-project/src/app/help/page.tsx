@@ -8,7 +8,12 @@ export default function AirportHelp() {
     const [faqs, setFaqs] = useState<Faq[]>([]);
 
     const getFaqs = useCallback(async () => {
-        const res = await fetch(faqsUrl);
+        const res = await fetch(faqsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");

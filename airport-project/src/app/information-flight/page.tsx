@@ -19,7 +19,12 @@ export default function FlightInformation({ searchParams }: {
     const [arrivalFlight, setArrivalFlight] = useState<Arrival>([] as any);
 
     const getDepartureFlight = useCallback(async () => {
-        const res = await fetch(departureFlightUrl);
+        const res = await fetch(departureFlightUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             console.log("The details are NOT valid!");
@@ -34,7 +39,12 @@ export default function FlightInformation({ searchParams }: {
     }, [departureFlightUrl]);
 
     const getArrivalFlight = useCallback(async () => {
-        const res = await fetch(arrivalFlightUrl);
+        const res = await fetch(arrivalFlightUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             console.log("The details are NOT valid!");

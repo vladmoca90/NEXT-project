@@ -17,7 +17,12 @@ export default function AirportSearchBar() {
         let airlineOrFlightUrl = "http://localhost:3000/api/search-airlines?text=" + value;
 
         if (value.length >= 2) {
-            const res = await fetch(airlineOrFlightUrl);
+            const res = await fetch(airlineOrFlightUrl, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
             const body = await res.json();
             const result = body.result;
 

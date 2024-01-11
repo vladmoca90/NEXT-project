@@ -11,7 +11,12 @@ export default function AirportGuide() {
     const [guides, setGuides] = useState<Guide[]>([]);
 
     const getGuides = useCallback(async () => {
-        const res = await fetch(guidesUrl);
+        const res = await fetch(guidesUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");
