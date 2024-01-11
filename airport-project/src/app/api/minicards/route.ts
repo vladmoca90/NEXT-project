@@ -6,7 +6,7 @@ export function GET(request: NextRequest) {
     return NextResponse.json(
         {
             body: allMinicards,
-            path: request.nextUrl.pathname,
+            path: "https://airport-next-new.vercel.app/",
             query: request.nextUrl.search,
             cookies: request.cookies.getAll(),
         },
