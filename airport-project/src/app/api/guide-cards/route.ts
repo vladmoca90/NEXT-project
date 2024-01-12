@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { allGuides } from "../../../../lib/guide-cards/allGuides";
 
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
     return NextResponse.json(
         {
             body: allGuides,

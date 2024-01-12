@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { allTerminalMaps } from "../../../../lib/maps-terminals-maps/allTerminalMaps";
 
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
     return NextResponse.json(
         {
             body: allTerminalMaps,

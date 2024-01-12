@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { allPlans } from "../../../../lib/plans/allPlans";
 
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
     return NextResponse.json(
         {
             body: allPlans,

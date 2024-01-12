@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 import { allDepartures } from "../../../../lib/search-departures/allDepartures";
 import { FlightStatus } from "../../../../lib/search-departures/flightStatus";
 
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
     const airlineName = request.nextUrl.searchParams.get("airlineName");
     const noFlights = [
         {

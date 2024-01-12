@@ -5,7 +5,7 @@ import { allDepartures } from "../../../../lib/search-departures/allDepartures";
 import { allArrivals } from "../../../../lib/search-arrivals/allArrivals";
 import { AirlineOrFlight } from "../../../../lib/airlineOrFlight/airlineOrFlight";
 
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
     const text = request.nextUrl.searchParams.get("text");
 
     if (text === null || text.length < 2) {

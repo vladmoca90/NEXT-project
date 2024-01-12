@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { allDepartures } from "../../../../lib/search-departures/allDepartures";
 
-export function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
     const flightNumber = request.nextUrl.searchParams.get("flightNumber");
 
     if (flightNumber === null) {
