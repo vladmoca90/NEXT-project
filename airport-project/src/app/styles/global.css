@@ -578,14 +578,8 @@ body #mainContent .bottom-container {
     padding: 2em 0;
 }
 
-@media all and (max-width: 991px) {
-    body #mainContent .bottom-container .btn{
-        width: 45%;
-    }
-}
-
 @media all and (max-width: 767px) {
-    #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
+    body #mainContent .bottom-container .btn{
         width: 79%;
     }
 }
