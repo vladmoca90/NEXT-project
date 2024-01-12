@@ -60,6 +60,13 @@
     align-items: center;
     display: flex;
     font-size: 1.5em;
+    font-weight: 600;
+}
+
+@media all and (min-width: 768px) {
+    .booking-airline {
+        font-size: 1.4em;
+    }
 }
 
 .booking-tailfin {
