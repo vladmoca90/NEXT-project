@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
@@ -63,7 +64,7 @@ export default function BookingDetails({ searchParams }: {
                     <span>
                         <span className="booking-label">Airline Number:</span>
                         <span className="booking-airline">
-                            <Image width={60} height={60} className="booking-tailfin" alt={flightDetails.flightDetails.airlineName} src={flightDetails.flightDetails.airlineFin} />
+                            <img className="booking-tailfin" alt={flightDetails.flightDetails.airlineName} src={flightDetails.flightDetails.airlineFin} />
                             {flightDetails.flightDetails.airlineNumber}
                         </span>
                     </span>
