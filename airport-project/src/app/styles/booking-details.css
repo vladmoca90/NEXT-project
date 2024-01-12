@@ -59,6 +59,13 @@
 .booking-airline {
     align-items: center;
     display: flex;
+    font-size: 1.5em;
+}
+
+@media all and (min-width: 768px) {
+    .booking-airline{
+        font-size: 1.85em;
+    }
 }
 
 .booking-tailfin {
@@ -68,13 +75,13 @@
 }
 
 @media all and (min-width: 768px) {
-    .booking-details--found {
+    .booking-tailfin {
         width: 48px;
     }
 }
 
 @media all and (min-width: 992px) {
-    .booking-details--found {
+    .booking-tailfin {
         max-width: 39px;
     }
 }
