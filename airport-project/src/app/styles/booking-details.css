@@ -62,12 +62,6 @@
     font-size: 1.5em;
 }
 
-@media all and (min-width: 768px) {
-    .booking-airline{
-        font-size: 1.85em;
-    }
-}
-
 .booking-tailfin {
     height: auto;
     margin-right: .33em;
