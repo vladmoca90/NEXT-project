@@ -586,7 +586,7 @@ body #mainContent .bottom-container {
 
 @media all and (max-width: 767px) {
     #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
-        width: 310px;
+        width: 79%;
     }
 }
 
