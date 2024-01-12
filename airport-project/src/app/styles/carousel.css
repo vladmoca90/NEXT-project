@@ -61,36 +61,30 @@
 
 @media all and (min-width: 768px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 11%;
+        left: 6.25em;
         right: auto;
         text-align: left;
-        top: 1.25em;
-        width: 550px;
-    }
-}
-
-@media all and (min-width: 800px) {
-    #airportCarousel .carousel .slide .carousel-content {
         top: 2em;
+        width: 550px;
     }
 }
 
 @media all and (min-width: 992px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 10%;
-        top: 4em;
+        left: 9.75em;
+        top: 4.75em;
     }
 }
 
 @media all and (min-width: 1200px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 16%;
+        left: 11em;
     }
 }
 
 @media all and (min-width: 1400px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 20%;
+        left: 13em;
         top: 6em;
         width: 800px;
     }

@@ -35,12 +35,13 @@
 @media all and (min-width: 768px) {
     #bookingPopUp {
         padding: 1.4em 1.75em 1.75em;
+        width: 385px;
     }
 }
 
 @media all and (min-width: 992px) {
     #bookingPopUp {
-        width: 450px;
+        width: 485px;
     }
 }
 
@@ -100,7 +101,7 @@
 
 @media all and (min-width: 768px) {
     #bookingPopUp .booking-content form label {
-        font-size: 1em;
+        font-size: 1.1em;
         width: auto;
     }
 }
