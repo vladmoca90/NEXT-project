@@ -62,8 +62,21 @@
 }
 
 .booking-tailfin {
+    height: auto;
     margin-right: .33em;
     max-width: 60px;
+}
+
+@media all and (min-width: 768px) {
+    .booking-details--found {
+        width: 48px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .booking-details--found {
+        max-width: 39px;
+    }
 }
 
 .booking-details--found .booking-details-title {

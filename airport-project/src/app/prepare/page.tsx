@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { CheckIn } from "../../../lib/prepare-check-in/checkIn";
 
 export default function AirportPrepare() {
-    let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";
+    let checkInsUrl = "http://localhost:3000/api/prepare-check-in";
 
     const [checkIns, setCheckIns] = useState<CheckIn[]>([]);
 
