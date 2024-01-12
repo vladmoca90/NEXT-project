@@ -10,7 +10,7 @@ import sliderOne from "../../public/images/slider1.jpg";
 import sliderTwo from "../../public/images/slider2.jpg";
 import sliderThree from "../../public/images/slider3.jpg";
 
-export default function HomepageCarousel() {
+export default function AirportCarousel() {
     return (
         <div id="airportCarousel">
             <Carousel showArrows={true} showThumbs={false}>
