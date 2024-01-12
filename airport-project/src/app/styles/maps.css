@@ -147,7 +147,7 @@
 }
 
 @media all and (min-width: 767px) {
-    body #mainContent .bottom-container .airportMaps-link.btn {
-        width: 43%;
+    body #mainContent #airportMaps .bottom-container .btn {
+        width: auto;
     }
 }
