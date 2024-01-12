@@ -139,6 +139,7 @@
     letter-spacing: 0;
     line-height: 160%;
     margin: 0;
+    width: 100%;
 }
 
 @media all and (min-width: 768px) {
