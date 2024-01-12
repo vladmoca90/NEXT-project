@@ -9,7 +9,6 @@ export async function GET(request: NextRequest) {
             path: request.nextUrl.pathname,
             query: request.nextUrl.search,
             cookies: request.cookies.getAll(),
-            headers: { "Content-Type": "application/json" }
         },
         {
             status: 200,

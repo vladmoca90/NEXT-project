@@ -25,6 +25,10 @@ export default function AirportHomepage() {
             },
         });
 
+        if (res.status === 203 || res.status === 204) {
+            return res.json();
+        }
+
         if (!res.ok) {
             throw new Error("Failed to fetch data");
         }
