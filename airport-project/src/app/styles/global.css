@@ -584,9 +584,9 @@ body #mainContent .bottom-container {
     }
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 767px) {
     #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
-        width: 72%;
+        width: auto;
     }
 }
 
@@ -594,6 +594,5 @@ body #mainContent .bottom-container {
     body #mainContent .bottom-container .btn,
     #airportHelp .airportHelp-pay .airportHelp-pay--right .btn {
         font-size: 1.2em;
-        width: 79%;
     }
 }
