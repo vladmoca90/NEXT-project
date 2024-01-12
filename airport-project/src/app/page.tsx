@@ -23,22 +23,13 @@ export default function AirportHomepage() {
             headers: {
                 "Content-Type": "application/json",
             },
-        }).then(res => {
-            if (res.ok) {
-                return res.json();
-            }
         });
 
-//         useEffect(() => {
-//     fetch(carsShowroomUrl)
-//         .then((response) => response)
-//         .then(e => e.json())
-//         .then(e => setCars(e as Car[]))
-//         .catch(error =>
-//             setError(error))
-// }, [carsShowroomUrl]);
+        if (!res.ok) {
+            throw new Error("Failed to fetch data");
+        }
 
-        const data = await res;
+        const data = await res.json();
 
         setMinicards(data.body);
     }, [minicardsUrl]);
