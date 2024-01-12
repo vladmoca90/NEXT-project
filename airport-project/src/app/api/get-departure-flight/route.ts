@@ -36,4 +36,4 @@ export async function GET(request: NextRequest) {
 
 }
 
-// http://localhost:3000/api/get-departure-flight
+// https://airport-next-new.vercel.app/api/get-departure-flight

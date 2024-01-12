@@ -16,4 +16,4 @@ export async function GET(request: NextRequest) {
     );
 }
 
-// http://localhost:3000/api/shop-and-eat
+// https://airport-next-new.vercel.app/api/shop-and-eat

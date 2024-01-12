@@ -14,7 +14,7 @@ export default function AirportSearchBar() {
 
         setFlightOrAirlineText(value);
 
-        let airlineOrFlightUrl = "http://localhost:3000/api/search-airlines?text=" + value;
+        let airlineOrFlightUrl = "https://airport-next-new.vercel.app/api/search-airlines?text=" + value;
 
         if (value.length >= 2) {
             const res = await fetch(airlineOrFlightUrl, {

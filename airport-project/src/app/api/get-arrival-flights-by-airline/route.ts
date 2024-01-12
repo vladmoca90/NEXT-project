@@ -49,4 +49,4 @@ export async function GET(request: NextRequest) {
 
 }
 
-// http://localhost:3000/api/get-arrival-flights-by-airline
+// https://airport-next-new.vercel.app/api/get-arrival-flights-by-airline

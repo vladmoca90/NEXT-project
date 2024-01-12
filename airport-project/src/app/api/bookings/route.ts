@@ -31,4 +31,4 @@ export async function POST(request: NextRequest) {
     }
 }
 
-// http://localhost:3000/api/bookings
+// https://airport-next-new.vercel.app/api/bookings

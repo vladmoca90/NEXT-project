@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Faq } from "../../../lib/help-faqs/faq";
 
 export default function AirportHelp() {
-    let faqsUrl = "http://localhost:3000/api/help-faqs";
+    let faqsUrl = "https://airport-next-new.vercel.app/api/help-faqs";
 
     const [faqs, setFaqs] = useState<Faq[]>([]);
 

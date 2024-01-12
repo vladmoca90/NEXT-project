@@ -12,8 +12,8 @@ export default function FlightInformation({ searchParams }: {
     }
 }) {
 
-    let departureFlightUrl = "http://localhost:3000/api/get-departure-flight?flightNumber=" + searchParams.flightNumber;
-    let arrivalFlightUrl = "http://localhost:3000/api/get-arrival-flight?flightNumber=" + searchParams.flightNumber;
+    let departureFlightUrl = "https://airport-next-new.vercel.app/api/get-departure-flight?flightNumber=" + searchParams.flightNumber;
+    let arrivalFlightUrl = "https://airport-next-new.vercel.app/api/get-arrival-flight?flightNumber=" + searchParams.flightNumber;
 
     const [departureFlight, setDepartureFlight] = useState<Departure>([] as any);
     const [arrivalFlight, setArrivalFlight] = useState<Arrival>([] as any);

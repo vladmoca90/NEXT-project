@@ -59,8 +59,8 @@ export default function AirlineInformation({ searchParams }: {
     }
 }) {
 
-    let departureAirlinesUrl = "http://localhost:3000/api/get-departure-flights-by-airline?airlineName=" + searchParams.airlineName;
-    let arrivalAirlinesUrl = "http://localhost:3000/api/get-arrival-flights-by-airline?airlineName=" + searchParams.airlineName;
+    let departureAirlinesUrl = "https://airport-next-new.vercel.app/api/get-departure-flights-by-airline?airlineName=" + searchParams.airlineName;
+    let arrivalAirlinesUrl = "https://airport-next-new.vercel.app/api/get-arrival-flights-by-airline?airlineName=" + searchParams.airlineName;
 
     const [departureAirlines, setDepartureAirlines] = useState<Departure[]>([]);
     const [arrivalAirlines, setArrivalAirlines] = useState<Arrival[]>([]);

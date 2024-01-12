@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
 
-const bookingsUrl = "http://localhost:3000/api/bookings";
+const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
 export default function BookingDetails({ searchParams }: {
     searchParams: {
