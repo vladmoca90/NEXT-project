@@ -146,7 +146,7 @@
     margin: 0;
 }
 
-@media all and (min-width: 767px) {
+@media all and (max-width: 767px) {
     body #mainContent #airportMaps .bottom-container .btn {
         width: auto;
     }
