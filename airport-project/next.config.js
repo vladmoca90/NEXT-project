@@ -4,7 +4,7 @@ module.exports = {
         return [
             {
                 // matching all API routes
-                source: "/api/:path*",
+                source: "src/app/api/minicards/route.ts",
                 headers: [
                     { key: "Access-Control-Allow-Private-Network", value: "true" },
                     { key: "Access-Control-Allow-Credentials", value: "true" },
