@@ -266,7 +266,7 @@ body .flight-information .flightInformation-container {
 .flight-information .flightInformation-middle-button a {
   font-size: 1.25em;
   margin: .5em auto;
-  width: 70%;
+  width: 72%;
 }
 
 @media all and (min-width: 768px) {
