@@ -10,9 +10,6 @@
       ]
     }
   ],
-  "functions": {
-    "/api/*.ts": {
-      "memory": 1024
-    }
-  }
+  "functions": "/api/*.ts",
+  "public": true
 }
