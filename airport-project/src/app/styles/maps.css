@@ -145,3 +145,9 @@
     font-size: 1em;
     margin: 0;
 }
+
+@media all and (min-width: 767px) {
+    #airportMaps .airportMaps-section .airportMaps-link {
+        width: 43%;
+    }
+}
