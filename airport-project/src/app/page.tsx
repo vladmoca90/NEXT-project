@@ -20,18 +20,25 @@ export default function AirportHomepage() {
     const getMinicards = useCallback(async () => {
         const res = await fetch(minicardsUrl, {
             method: "GET",
-            mode: "no-cors",
-            cache: "no-cache",
             headers: {
                 "Content-Type": "application/json",
             },
+        }).then(res => {
+            if (res.ok) {
+                return res.json();
+            }
         });
 
-        if (!res.ok) {
-            throw new Error("Failed to fetch data");
-        }
+//         useEffect(() => {
+//     fetch(carsShowroomUrl)
+//         .then((response) => response)
+//         .then(e => e.json())
+//         .then(e => setCars(e as Car[]))
+//         .catch(error =>
+//             setError(error))
+// }, [carsShowroomUrl]);
 
-        const data = await res.json();
+        const data = await res;
 
         setMinicards(data.body);
     }, [minicardsUrl]);
