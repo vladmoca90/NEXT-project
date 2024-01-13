@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+#airportPrepare h2 {
+    width: 98%;
+}
+
 #airportPrepare .airportPrepare-banner {
     background: url("/images/airportPrepare-banner.jpg") no-repeat center center;
     background-position-y: 60%;
@@ -24,7 +28,7 @@
     width: 90%;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
     #airportPrepare .cards.cards-nationality .card-content {
         width: 32%;
     }

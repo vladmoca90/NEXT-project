@@ -283,12 +283,6 @@ body #mainContent .cards .card-content {
     width: 100%;
 }
 
-@media all and (min-width: 600px) {
-    body #mainContent .cards .card-content {
-        width: 400px;
-    }
-}
-
 @media all and (min-width: 768px) {
     body #mainContent .cards .card-content {
         flex-direction: column;
