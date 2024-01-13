@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-#airportPrepare h2 {
+body #mainContent #airportPrepare .heading-subtitle {
     width: 98%;
 }
 
