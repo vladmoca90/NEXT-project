@@ -280,7 +280,7 @@ body #mainContent .cards .card-content {
     flex-direction: column;
     justify-content: flex-end;
     margin: .5em 0;
-    width: 90%;
+    width: 100%;
 }
 
 @media all and (min-width: 600px) {
