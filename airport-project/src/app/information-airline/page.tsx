@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";

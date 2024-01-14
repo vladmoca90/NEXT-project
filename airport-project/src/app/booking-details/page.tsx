@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
 
