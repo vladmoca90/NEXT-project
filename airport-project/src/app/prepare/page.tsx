@@ -6,8 +6,8 @@ import { Nationality } from "../../../lib/prepareNationalities/Nationality";
 
 export default function AirportPrepare() {
     let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";
-    let outsideUKUrl = "https://airport-next-new.vercel.app/api/prepare-outside-uk";
-    let nationalitiesUrl = "https://airport-next-new.vercel.app/api/prepare-identities";
+    let outsideUKUrl = "https://airport-next-new.vercel.app/prepare-travel-outside-uk";
+    let nationalitiesUrl = "https://airport-next-new.vercel.app/prepare-nationalities";
 
     const [checkIns, setCheckIns] = useState<CheckIn[]>([]);
     const [outsides, setOutsides] = useState<OutsideUK[]>([]);
