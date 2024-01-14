@@ -48,7 +48,7 @@
     position: absolute;
     right: 0;
     text-align: center;
-    top: 1.7em;
+    top: 1em;
     width: 90%;
 }
 
@@ -170,12 +170,13 @@
 
 #airportCarousel .carousel .slide .carousel-content .carousel-link {
     border: 0;
-    font-size: 1.2em;
+    font-size: .95em;
     padding: .4em 1em;
 }
 
 @media all and (min-width: 480px) {
     #airportCarousel .carousel .slide .carousel-content .carousel-link {
+        font-size: 1.2em;
         padding: .45em 1em;
     }
 }

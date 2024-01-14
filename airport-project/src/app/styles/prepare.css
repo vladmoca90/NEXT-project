@@ -24,16 +24,6 @@ body #mainContent #airportPrepare .heading-subtitle {
     background-size: cover;
 }
 
-#airportPrepare .cards.cards-nationality .card-content {
-    width: 90%;
-}
-
-@media all and (min-width: 768px) {
-    #airportPrepare .cards.cards-nationality .card-content {
-        width: 32%;
-    }
-}
-
 #airportPrepare .cards.cards-nationality .card-content:nth-of-type(1) .card-image {
     background: url("/images/british-passport.jpg") no-repeat center center;
     background-size: cover;

@@ -731,6 +731,7 @@ body #mainContent h5,
 body #mainContent h6 {
   color: #2b0b50;
   font-weight: 700;
+  width: 99%;
 }
 
 body #mainContent p {
@@ -848,7 +849,7 @@ body #mainContent .cards .card-content {
   flex-direction: column;
   justify-content: flex-end;
   margin: .5em 0;
-  width: 100%;
+  width: 94%;
 }
 
 @media all and (min-width: 768px) {
