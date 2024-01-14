@@ -73,22 +73,23 @@
     }
 }
 
-#searchBar .search-bar-title {
+#searchBar h3.search-bar-title {
     color: #2b0b50;
     font-size: 1.25em;
     font-weight: 600;
     margin-top: 0;
     padding: 0;
     position: relative;
+    width: auto;
 }
 
 @media all and (min-width: 768px) {
-    #searchBar .search-bar-title {
+    #searchBar h3.search-bar-title {
         margin-top: .5em;
     }
 }
 
-#searchBar .search-bar-title:after {
+#searchBar h3.search-bar-title:after {
     background: #a0157c;
     bottom: .75em;
     content: "";
@@ -100,13 +101,13 @@
 }
 
 @media all and (min-width: 768px) {
-    #searchBar .search-bar-title:after {
+    #searchBar h3.search-bar-title:after {
         bottom: .3em;
     }
 }
 
 @media all and (min-width: 1400px) {
-    #searchBar .search-bar-title:after {
+    #searchBar h3.search-bar-title:after {
         bottom: .35em;
     }
 }

@@ -18,7 +18,6 @@
 }
 
 #Footer .footer-container {
-    align-items: baseline;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,9 +90,10 @@
 }
 
 #Footer .footer-socials {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
+    margin-top: 1.25em;
     max-width: 200px;
 }
 
