@@ -29,7 +29,7 @@ export default function AirportSearchBar() {
 
             setResults(result);
         } else {
-            return null;
+            setResults([]);
         }
     }, []);
 
