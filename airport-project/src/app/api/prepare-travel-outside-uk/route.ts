@@ -16,4 +16,4 @@ export async function GET(request: NextRequest) {
     );
 }
 
-// https://airport-next-new.vercel.app/api/prepare-outside-uk
+// https://airport-next-new.vercel.app/prepare-travel-outside-uk
