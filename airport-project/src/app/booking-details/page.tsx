@@ -42,7 +42,13 @@ export default function BookingDetails({ searchParams }: {
         getBookingData();
     }, [getBookingData]);
 
-    if (flightDetails) {
+    if (!flightDetails) {
+        return (
+            <div className="booking-details--not-found">
+                <h3>No booking could be found!</h3>
+            </div>
+        );
+    } else {
         return (
             <div className="booking-details--found">
                 <span className="booking-details-title">Your ticket itinerary</span>
@@ -67,12 +73,6 @@ export default function BookingDetails({ searchParams }: {
                     <span><span className="booking-label">Terminal: </span>{flightDetails.flightDetails.terminal}</span>
                     <span><span className="booking-label">Seat: </span>{flightDetails.flightDetails.seat}</span>
                 </div>
-            </div>
-        );
-    } else {
-        return (
-            <div className="booking-details--not-found">
-                <h3>No booking could be found!</h3>
             </div>
         );
     }
