@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allDepartures } from "../../../../lib/search-departures/allDepartures";
+import { allDepartures } from "../../../../lib/searchDepartures/allDepartures";
 
 export async function GET(request: NextRequest) {
     const flightNumber = request.nextUrl.searchParams.get("flightNumber");

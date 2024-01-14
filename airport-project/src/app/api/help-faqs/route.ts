@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allFaqs } from "../../../../lib/help-faqs/allFaqs";
+import { allFaqs } from "../../../../lib/helpFaqs/allFaqs";
 
 export async function GET(request: NextRequest) {
     return NextResponse.json(

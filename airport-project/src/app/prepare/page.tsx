@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { CheckIn } from "../../../lib/prepare-check-in/checkIn";
+import { CheckIn } from "../../../lib/prepareCheckIn/checkIn";
 
 export default function AirportPrepare() {
     let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";

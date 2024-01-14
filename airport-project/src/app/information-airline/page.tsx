@@ -5,9 +5,9 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import { useCallback, useEffect, useState } from "react";
-import { Departure } from "../../../lib/search-departures/departure";
-import { Arrival } from "../../../lib/search-arrivals/arrival";
-import { FlightStatus } from "../../../lib/search-departures/flightStatus";
+import { Departure } from "../../../lib/searchDepartures/departure";
+import { Arrival } from "../../../lib/searchArrivals/arrival";
+import { FlightStatus } from "../../../lib/searchDepartures/flightStatus";
 
 const getFlightStatusClassName = (status: FlightStatus) => {
     let flightStatusClass = "";

@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allAirlines } from "../../../../lib/search-airlines/allAirlines";
-import { allDepartures } from "../../../../lib/search-departures/allDepartures";
-import { allArrivals } from "../../../../lib/search-arrivals/allArrivals";
+import { allAirlines } from "../../../../lib/searchAirlines/allAirlines";
+import { allDepartures } from "../../../../lib/searchDepartures/allDepartures";
+import { allArrivals } from "../../../../lib/searchArrivals/allArrivals";
 import { AirlineOrFlight } from "../../../../lib/airlineOrFlight/airlineOrFlight";
 
 export async function GET(request: NextRequest) {

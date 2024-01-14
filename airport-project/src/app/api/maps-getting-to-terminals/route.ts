@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allHeathrowMaps } from "../../../../lib/maps-getting-to-terminals/allHeathrowMaps";
+import { allHeathrowMaps } from "../../../../lib/mapsGettingToTerminals/allHeathrowMaps";
 
 export async function GET(request: NextRequest) {
     return NextResponse.json(

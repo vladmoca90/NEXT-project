@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { HeathrowMap } from "../../../lib/maps-getting-to-terminals/heathrowMap";
-import { TerminalMap } from "../../../lib/maps-terminals-maps/terminalMap";
+import { HeathrowMap } from "../../../lib/mapsGettingToTerminals/heathrowMap";
+import { TerminalMap } from "../../../lib/mapsTerminalMaps/terminalMap";
 
 export default function AirportMaps() {
     let mapsUrl = "https://airport-next-new.vercel.app/api/maps-getting-to-terminals";

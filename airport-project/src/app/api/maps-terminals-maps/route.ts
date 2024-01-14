@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allTerminalMaps } from "../../../../lib/maps-terminals-maps/allTerminalMaps";
+import { allTerminalMaps } from "../../../../lib/mapsTerminalMaps/allTerminalMaps";
 
 export async function GET(request: NextRequest) {
     return NextResponse.json(

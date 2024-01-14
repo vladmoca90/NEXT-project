@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allGuides } from "../../../../lib/guide-cards/allGuides";
+import { allGuides } from "../../../../lib/guideCards/allGuides";
 
 export async function GET(request: NextRequest) {
     return NextResponse.json(

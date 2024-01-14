@@ -3,7 +3,7 @@
 import Image from "next/image";
 import googlePlayImg from "../../../public/images/google-play.png";
 import { useCallback, useEffect, useState } from "react";
-import { Shop } from "../../../lib/shop-and-eat/shop";
+import { Shop } from "../../../lib/shopAndEat/shop";
 
 export default function AirportShopAndEat() {
     let shopsUrl = "https://airport-next-new.vercel.app/api/shop-and-eat";

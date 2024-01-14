@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { Faq } from "../../../lib/help-faqs/faq";
+import { Faq } from "../../../lib/helpFaqs/faq";
 
 export default function AirportHelp() {
     let faqsUrl = "https://airport-next-new.vercel.app/api/help-faqs";

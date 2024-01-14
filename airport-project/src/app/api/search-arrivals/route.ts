@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allArrivals } from "./../../../../lib/search-arrivals/allArrivals";
+import { allArrivals } from "../../../../lib/searchArrivals/allArrivals";
 
 export async function GET(request: NextRequest) {
     return NextResponse.json(

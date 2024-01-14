@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { Destination } from "../../../lib/guide-destinations/destination";
-import { Guide } from "../../../lib/guide-cards/guide";
+import { Destination } from "../../../lib/guideDestinations/destination";
+import { Guide } from "../../../lib/guideCards/guide";
 
 export default function AirportGuide() {
     let destinationsUrl = "https://airport-next-new.vercel.app/api/guide-destinations";

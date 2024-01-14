@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allDepartures } from "../../../../lib/search-departures/allDepartures";
-import { FlightStatus } from "../../../../lib/search-departures/flightStatus";
+import { allDepartures } from "../../../../lib/searchDepartures/allDepartures";
+import { FlightStatus } from "../../../../lib/searchDepartures/flightStatus";
 
 export async function GET(request: NextRequest) {
     const airlineName = request.nextUrl.searchParams.get("airlineName");
