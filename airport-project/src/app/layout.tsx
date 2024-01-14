@@ -24,22 +24,18 @@ import "./styles/shop-and-eat.css";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Airport NEXT Project",
-  description: "My personal project",
+  title: "Airport Project",
+  description: "My personal project, a replica of the Heathrow Airport",
 }
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <AirportNav />
-        <div id="mainContent">
-          {children}
-        </div>
+        <div id="mainContent">{children}</div>
         <AirportFooter />
       </body>
     </html>
