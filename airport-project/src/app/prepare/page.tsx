@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { CheckIn } from "../../../lib/prepareCheckIn/checkIn";
 import { OutsideUK } from "../../../lib/prepareOutsideUK/outsideUK";
+import { Nationality } from "../../../lib/prepareNationalities/Nationality";
 
 export default function AirportPrepare() {
     let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";
