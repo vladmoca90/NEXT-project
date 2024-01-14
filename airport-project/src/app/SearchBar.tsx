@@ -23,6 +23,7 @@ export default function AirportSearchBar() {
                     "Content-Type": "application/json",
                 },
             });
+
             const body = await res.json();
             const result = body.result;
 
