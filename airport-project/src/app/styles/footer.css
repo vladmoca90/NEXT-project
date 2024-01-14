@@ -90,7 +90,10 @@
     }
 }
 
-#Footer .footer-contact span {
+#Footer .footer-contact span,
+#Footer .footer-contact .footer-socials,
+#Footer .footer-list-container .footer-list-title,
+#Footer .footer-list-container .footer-list li {
     color: #fff;
     line-height: 160%;
 }
@@ -100,7 +103,6 @@
 }
 
 #Footer .footer-list-container .footer-list-title {
-    color: #fff;
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: .5em;
@@ -133,11 +135,9 @@
 }
 
 #Footer .footer-list-container .footer-list li {
-    color: #fff;
     font-size: 1em;
     font-weight: 100;
     letter-spacing: 0;
-    line-height: 160%;
     margin: 0;
     width: 100%;
 }
