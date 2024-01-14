@@ -95,11 +95,11 @@
     line-height: 160%;
 }
 
-#Footer .footer-list-content {
+#Footer .footer-list-container {
     margin: 0;
 }
 
-#Footer .footer-list-content .footer-list-title {
+#Footer .footer-list-container .footer-list-title {
     color: #fff;
     font-size: 1.2em;
     font-weight: 600;
@@ -109,30 +109,30 @@
 }
 
 @media all and (min-width: 768px) {
-    #Footer .footer-list-content .footer-list-title {
+    #Footer .footer-list-container .footer-list-title {
         font-size: 1em;
         margin-bottom: 1em;
     }
 }
 
 @media all and (min-width: 992px) {
-    #Footer .footer-list-content .footer-list-title {
+    #Footer .footer-list-container .footer-list-title {
         font-size: 1.2em;
     }
 }
 
 @media all and (min-width: 1400px) {
-    #Footer .footer-list-content .footer-list-title {
+    #Footer .footer-list-container .footer-list-title {
         font-size: 1.5em;
     }
 }
 
-#Footer .footer-list-content .footer-list {
+#Footer .footer-list-container .footer-list {
     list-style-type: none;
     padding: 0;
 }
 
-#Footer .footer-list-content .footer-list li {
+#Footer .footer-list-container .footer-list li {
     color: #fff;
     font-size: 1em;
     font-weight: 100;
@@ -143,19 +143,19 @@
 }
 
 @media all and (min-width: 768px) {
-    #Footer .footer-list-content .footer-list li {
+    #Footer .footer-list-container .footer-list li {
         font-size: .85em;
     }
 }
 
 @media all and (min-width: 992px) {
-    #Footer .footer-list-content .footer-list li {
+    #Footer .footer-list-container .footer-list li {
         font-size: 1.1em;
     }
 }
 
 @media all and (min-width: 1400px) {
-    #Footer .footer-list-content .footer-list li {
+    #Footer .footer-list-container .footer-list li {
         font-size: 1.2em;
     }
 }

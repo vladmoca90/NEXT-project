@@ -23,7 +23,7 @@ export default function AirportFooter() {
                         </div>
                     </div>
                 </div>
-                <div className="footer-list-content">
+                <div className="footer-list-container">
                     <h3 className="footer-list-title">Helpful links</h3>
                     <ul className="footer-list">
                         <li>Flights</li>
@@ -35,7 +35,7 @@ export default function AirportFooter() {
                         <li>Help</li>
                     </ul>
                 </div>
-                <div className="footer-list-content">
+                <div className="footer-list-container">
                     <h3 className="footer-list-title">Discover Heathrow</h3>
                     <ul className="footer-list">
                         <li>Special offers</li>
@@ -45,7 +45,7 @@ export default function AirportFooter() {
                         <li>VIP</li>
                     </ul>
                 </div>
-                <div className="footer-list-content">
+                <div className="footer-list-container">
                     <h3 className="footer-list-title">Our company</h3>
                     <ul className="footer-list">
                         <li>About the airport</li>
