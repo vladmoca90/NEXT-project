@@ -6,9 +6,11 @@ import { OutsideUK } from "../../../lib/prepareOutsideUK/outsideUK";
 export default function AirportPrepare() {
     let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";
     let outsideUKUrl = "https://airport-next-new.vercel.app/api/prepare-outside-uk";
+    let nationalitiesUrl = "https://airport-next-new.vercel.app/api/prepare-identities";
 
     const [checkIns, setCheckIns] = useState<CheckIn[]>([]);
     const [outsides, setOutsides] = useState<OutsideUK[]>([]);
+    const [nationalities, setNationalities] = useState<Nationality[]>([]);
 
     const getCheckIns = useCallback(async () => {
         const res = await fetch(checkInsUrl, {
@@ -44,10 +46,27 @@ export default function AirportPrepare() {
         setOutsides(data.body);
     }, [outsideUKUrl]);
 
+    const getNationalities = useCallback(async () => {
+        const res = await fetch(nationalitiesUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        if (!res.ok) {
+            throw new Error("Failed to fetch data");
+        }
+
+        const data = await res.json();
+
+        setNationalities(data.body);
+    }, [nationalitiesUrl]);
+
     useEffect(() => {
         getCheckIns();
         getOutsides();
-    }, [getCheckIns]);
+    }, [getCheckIns, getOutsides, getNationalities]);
 
     return (
         <div id="airportPrepare">
@@ -75,27 +94,19 @@ export default function AirportPrepare() {
             </div>
             <h2 className="heading-subtitle">What identity documents do I need to carry?</h2>
             <div className="cards cards-nationality">
-                <div className="card-content">
-                    <div className="card-image"></div>
-                    <div className="card-content-text">
-                        <h3 className="heading-content">I am British</h3>
-                        <a className="card-link btn" title="Boarding" href="##">Check requirements</a>
-                    </div>
-                </div>
-                <div className="card-content">
-                    <div className="card-image"></div>
-                    <div className="card-content-text">
-                        <h3 className="heading-content">I am an Irish national</h3>
-                        <a className="card-link btn" title="Boarding" href="##">Check requirements</a>
-                    </div>
-                </div>
-                <div className="card-content">
-                    <div className="card-image"></div>
-                    <div className="card-content-text">
-                        <h3 className="heading-content">Other nationalities</h3>
-                        <a className="card-link btn" title="Boarding" href="##">Check requirements</a>
-                    </div>
-                </div>
+                {
+                    nationalities.map((nationality, index) => {
+                        return (
+                            <div className="card-content" key={index}>
+                                <div className="card-image"></div>
+                                <div className="card-content-text">
+                                    <h3 className="heading-content">{nationality.title}</h3>
+                                    <a className="card-link btn" title="Boarding" href="##">{nationality.urlText}</a>
+                                </div>
+                            </div>
+                        );
+                    });
+                }
             </div>
             <h2 className="heading-subtitle">I am traveling within the UK</h2>
             <div className="cards cards-travel-within">
@@ -129,27 +140,6 @@ export default function AirportPrepare() {
                         )
                     })
                 }
-                <div className="card-content">
-                    <div className="card-image"></div>
-                    <div className="card-content-text">
-                        <h3 className="heading-content">Check-in procedures</h3>
-                        <a className="card-link btn" title="Boarding" href="##">Check requirements</a>
-                    </div>
-                </div>
-                <div className="card-content">
-                    <div className="card-image"></div>
-                    <div className="card-content-text">
-                        <h3 className="heading-content">Check visa requirements</h3>
-                        <a className="card-link btn" title="Boarding" href="##">Check requirements</a>
-                    </div>
-                </div>
-                <div className="card-content">
-                    <div className="card-image"></div>
-                    <div className="card-content-text">
-                        <h3 className="heading-content">For non-British legal residents</h3>
-                        <a className="card-link btn" title="Boarding" href="##">Check requirements</a>
-                    </div>
-                </div>
             </div>
             <div className="prepare-check-in">
                 <div>
