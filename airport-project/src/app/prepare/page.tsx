@@ -106,7 +106,7 @@ export default function AirportPrepare() {
                                 </div>
                             </div>
                         );
-                    });
+                    })
                 }
             </div>
             <h2 className="heading-subtitle">I am traveling within the UK</h2>
@@ -138,7 +138,7 @@ export default function AirportPrepare() {
                                     <a className="card-link btn" title="Boarding" href="##">{outside.urlText}</a>
                                 </div>
                             </div>
-                        )
+                        );
                     })
                 }
             </div>
