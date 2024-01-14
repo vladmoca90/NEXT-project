@@ -4,24 +4,24 @@ import AirportNav from "./Navigation";
 import AirportFooter from "./Footer";
 
 // all .css styles
-// import "./styles/airport-guide.css";
-// import "./styles/booking-details.css";
-// import "./styles/booking-popup.css";
-// import "./styles/carousel.css";
-// import "./styles/flight-information.css";
-// import "./styles/flights.css";
-// import "./styles/fonts.css";
-// import "./styles/footer.css";
-// import "./styles/global.css";
-// import "./styles/help.css";
-// import "./styles/homepage.css";
-// import "./styles/maps.css";
-// import "./styles/navigation.css";
-// import "./styles/prepare.css";
-// import "./styles/search-bar.css";
-// import "./styles/shop-and-eat.css";
+import "./styles/airport-guide.css";
+import "./styles/booking-details.css";
+import "./styles/booking-popup.css";
+import "./styles/carousel.css";
+import "./styles/flight-information.css";
+import "./styles/flights.css";
+import "./styles/fonts.css";
+import "./styles/footer.css";
+import "./styles/global.css";
+import "./styles/help.css";
+import "./styles/homepage.css";
+import "./styles/maps.css";
+import "./styles/navigation.css";
+import "./styles/prepare.css";
+import "./styles/search-bar.css";
+import "./styles/shop-and-eat.css";
 
-//using tailwind
+//using Tailwind
 import "./styles/output.css";
 
 const inter = Inter({ subsets: ["latin"] })
