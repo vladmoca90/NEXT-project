@@ -127,7 +127,7 @@ export default function AirportHomepage() {
                             })}
                     </div>
                     <div className="homepage-news-link">
-                        <a className="cta" target="_blank" href="https://www.heathrow.com/latest-news">View all news</a>
+                        <a rel="noopener" className="cta" target="_blank" href="https://www.heathrow.com/latest-news">View all news</a>
                     </div>
                 </div>
             </div>
