@@ -1,11 +1,14 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { CheckIn } from "../../../lib/prepareCheckIn/checkIn";
+import { OutsideUK } from "../../../lib/prepareOutsideUK/outsideUK";
 
 export default function AirportPrepare() {
     let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";
+    let outsideUKUrl = "https://airport-next-new.vercel.app/api/prepare-outside-uk";
 
     const [checkIns, setCheckIns] = useState<CheckIn[]>([]);
+    const [outsides, setOutsides] = useState<OutsideUK[]>([]);
 
     const getCheckIns = useCallback(async () => {
         const res = await fetch(checkInsUrl, {
@@ -24,8 +27,26 @@ export default function AirportPrepare() {
         setCheckIns(data.body);
     }, [checkInsUrl]);
 
+    const getOutsides = useCallback(async () => {
+        const res = await fetch(outsideUKUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        if (!res.ok) {
+            throw new Error("Failed to fetch data");
+        }
+
+        const data = await res.json();
+
+        setOutsides(data.body);
+    }, [outsideUKUrl]);
+
     useEffect(() => {
         getCheckIns();
+        getOutsides();
     }, [getCheckIns]);
 
     return (
@@ -95,6 +116,19 @@ export default function AirportPrepare() {
             </div>
             <h2 className="heading-subtitle">I am traveling outside the UK</h2>
             <div className="cards cards-nationality cards-outside-UK">
+                {
+                    outsides.map((outside, index) => {
+                        return (
+                            <div className="card-content" key={index}>
+                                <div className="card-image"></div>
+                                <div className="card-content-text">
+                                    <h3 className="heading-content">{outside.title}</h3>
+                                    <a className="card-link btn" title="Boarding" href="##">{outside.urlText}</a>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
                 <div className="card-content">
                     <div className="card-image"></div>
                     <div className="card-content-text">
