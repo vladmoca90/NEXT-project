@@ -21,6 +21,8 @@ import "./styles/prepare.css";
 import "./styles/search-bar.css";
 import "./styles/shop-and-eat.css";
 
+import "./styles/output.css";
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
