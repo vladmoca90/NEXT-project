@@ -2,7 +2,7 @@
 import Image from "next/image";
 import footerLogo from "../../public/images/footer-logo.png";
 
-export default function AirportFooter() {
+export default function AirportFooter() {      
     return (
         <div id="Footer">
             <div className="footer-container">

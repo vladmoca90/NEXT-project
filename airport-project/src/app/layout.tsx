@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import AirportNav from "./Navigation";
 import AirportFooter from "./Footer";
 
-//styles
+// styles
 import "./styles/airport-guide.css";
 import "./styles/booking-details.css";
 import "./styles/booking-popup.css";
