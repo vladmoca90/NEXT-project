@@ -28,6 +28,8 @@ export default function AirportSearchBar() {
             const result = body.result;
 
             setResults(result);
+        } else {
+            return null;
         }
     }, []);
 
