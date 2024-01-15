@@ -121,26 +121,27 @@
 }
 
 #airportFlights .airline-code-number {
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 0;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
+}
+
+@media all and (min-width: 992px) {
+  #airportFlights .airline-code-number {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 #airportFlights .airline-tailfin {
-  width: 2.25em;
-}
-
-@media all and (min-width: 768px) {
-  #airportFlights .airline-tailfin {
-    width: 3.25em;
-  }
+  width: 2.75em;
 }
 
 @media all and (min-width: 992px) {
   #airportFlights .airline-tailfin {
-    width: 3.3em;
+    width: 3.25em;
   }
 }
 
