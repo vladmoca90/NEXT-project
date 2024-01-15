@@ -41,7 +41,7 @@
 
 @media all and (min-width: 992px) {
     #bookingPopUp {
-        width: 485px;
+        width: 480px;
     }
 }
 
@@ -148,33 +148,6 @@
     }
 }
 
-#bookingPopUp .booking-bottom {
-    margin: 1.65em 0 0;
-    text-align: center;
-}
-
-#bookingPopUp .booking-btn-container .btn-booking {
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: .75em 0;
-    outline: 0;
-    width: 100%;
-}
-
-@media all and (min-width: 768px) {
-    #bookingPopUp .booking-btn-container .btn-booking {
-        font-size: 1.1em;
-        margin: 0;
-        width: auto;
-    }
-}
-
-@media all and (min-width: 992px) {
-    #bookingPopUp .booking-btn-container .btn-booking {
-        font-size: 1em;
-    }
-}
-
 #bookingPopUp .booking-btn-container .btn-booking {
     background: #a0157c;
     border: 0 !important;
@@ -182,16 +155,10 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 1em;
-    padding: .65em .7em .55em;
+    padding: .65em 0 .55em;
     text-transform: uppercase;
     transition: linear .5s all;
-    width: auto;
-}
-
-@media all and (min-width: 768px) {
-    #bookingPopUp .booking-btn-container .btn-booking {
-        padding: .65em 1.5em .55em;
-    }
+    width: 100%;
 }
 
 @media all and (min-width: 992px) {
@@ -201,6 +168,5 @@
 
     #bookingPopUp .booking-btn-container .btn-booking:hover {
         background: #6700cfd0;
-        color: #fff;
     }
 }
