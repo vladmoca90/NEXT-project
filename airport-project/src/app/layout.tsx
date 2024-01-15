@@ -3,9 +3,12 @@ import { Inter } from "next/font/google";
 import AirportNav from "./Navigation";
 import AirportFooter from "./Footer";
 
+// bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // main styles
 import "./styles/global.css";
-//import "./styles/output.css"; //using Tailwind
+import "./styles/output.css"; //using Tailwind
 
 // all other .css styles
 import "./styles/airport-guide.css";
