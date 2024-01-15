@@ -1,6 +1,6 @@
-import { OutsideUK } from "./outsideUK";
+import { Outside } from "./Outside";
 
-export const allOutsidesUK: OutsideUK[] = [
+export const allOutsides: Outside[] = [
     {
         title: "Check-in procedures",
         urlText: "Check requirements",

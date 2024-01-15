@@ -1,16 +1,16 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { CheckIn } from "../../../lib/prepareCheckIn/checkIn";
-import { OutsideUK } from "../../../lib/prepareOutsideUK/outsideUK";
+import { Outside } from "../../../lib/prepareOutsideUK/Outside";
 import { Nationality } from "../../../lib/prepareNationalities/Nationality";
 
 export default function AirportPrepare() {
     let checkInsUrl = "https://airport-next-new.vercel.app/api/prepare-check-in";
-    let outsideUKUrl = "https://airport-next-new.vercel.app/prepare-travel-outside-uk";
-    let nationalitiesUrl = "https://airport-next-new.vercel.app/prepare-nationalities";
+    let outsideUKUrl = "https://airport-next-new.vercel.app/api/prepare-travel-outside-uk";
+    let nationalitiesUrl = "https://airport-next-new.vercel.app/api/prepare-nationalities";
 
     const [checkIns, setCheckIns] = useState<CheckIn[]>([]);
-    const [outsides, setOutsides] = useState<OutsideUK[]>([]);
+    const [outsides, setOutsides] = useState<Outside[]>([]);
     const [nationalities, setNationalities] = useState<Nationality[]>([]);
 
     const getCheckIns = useCallback(async () => {
@@ -67,6 +67,7 @@ export default function AirportPrepare() {
     useEffect(() => {
         getCheckIns();
         getOutsides();
+        getNationalities();
     }, [getCheckIns, getOutsides, getNationalities]);
 
     return (

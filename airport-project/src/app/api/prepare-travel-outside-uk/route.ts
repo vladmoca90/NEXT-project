@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { allOutsidesUK } from "../../../../lib/prepareOutsideUK/allOutsidesUK";
+import { allOutsides } from "../../../../lib/prepareOutsideUK/allOutsides";
 
 export async function GET(request: NextRequest) {
     return NextResponse.json(
         {
-            body: allOutsidesUK,
+            body: allOutsides,
             path: request.nextUrl.pathname,
             query: request.nextUrl.search,
             cookies: request.cookies.getAll(),
@@ -16,4 +16,4 @@ export async function GET(request: NextRequest) {
     );
 }
 
-// https://airport-next-new.vercel.app/prepare-travel-outside-uk
+// https://airport-next-new.vercel.app/api/prepare-travel-outside-uk
