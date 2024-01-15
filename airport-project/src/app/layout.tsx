@@ -5,7 +5,7 @@ import AirportFooter from "./Footer";
 
 // main styles
 import "./styles/global.css";
-import "./styles/output.css"; //using Tailwind
+//import "./styles/output.css"; //using Tailwind
 
 // all other .css styles
 import "./styles/airport-guide.css";
