@@ -144,9 +144,7 @@
 
 @media all and (min-width: 768px) {
     #bookingPopUp .booking-content .booking-input-container>form {
-        display: flex;
         flex-direction: row;
-        margin: 1em 0;
     }
 }
 
@@ -183,8 +181,8 @@
     color: #fff;
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.1em;
-    padding: .65em 1.35em .55em;
+    font-size: 1em;
+    padding: .65em .7em .55em;
     text-transform: uppercase;
     transition: linear .5s all;
     width: auto;
