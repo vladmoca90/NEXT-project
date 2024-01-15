@@ -35,6 +35,7 @@
 }
 
 @media all and (min-width: 768px) {
+
   #airportFlights .table tr,
   #airportFlights .table th,
   #airportFlights .table td {
@@ -43,6 +44,7 @@
 }
 
 @media all and (min-width: 992px) {
+
   #airportFlights .table tr,
   #airportFlights .table th,
   #airportFlights .table td {
@@ -51,6 +53,7 @@
 }
 
 @media all and (min-width: 1400px) {
+
   #airportFlights .table tr,
   #airportFlights .table th,
   #airportFlights .table td {
@@ -118,10 +121,11 @@
 }
 
 #airportFlights .airline-code-number {
-  align-items: baseline;
+  align-items: center;
   border-bottom: 0;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 #airportFlights .airline-tailfin {
@@ -130,14 +134,14 @@
 
 @media all and (min-width: 768px) {
   #airportFlights .airline-tailfin {
-    width: 3em;
-  }  
+    width: 3.25em;
+  }
 }
 
 @media all and (min-width: 992px) {
   #airportFlights .airline-tailfin {
     width: 3.3em;
-  }  
+  }
 }
 
 #airportFlights .airline-status {
