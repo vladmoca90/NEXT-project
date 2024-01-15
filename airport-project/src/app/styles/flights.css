@@ -117,9 +117,14 @@
   }
 }
 
+#airportFlights .airline-code-number {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 #airportFlights .airline-tailfin {
-  margin-right: .4em;
-  width: 2.25em;
+  width: 3em;
 }
 
 #airportFlights .airline-status {
