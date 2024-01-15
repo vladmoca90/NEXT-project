@@ -138,13 +138,13 @@
 }
 
 #airportCarousel .carousel .slide .carousel-content .carousel-subheading {
-    font-size: 1em;
+    font-size: .9em;
     margin-bottom: .5em;
 }
 
 @media all and (min-width: 600px) {
     #airportCarousel .carousel .slide .carousel-content .carousel-subheading {
-        font-size: 1.25em;
+        font-size: 1.2em;
         margin-bottom: .75em;
     }
 }
