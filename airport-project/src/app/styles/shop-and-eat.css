@@ -130,7 +130,7 @@
     max-width: 185px;
 }
 
-#airportShopAndEat .airport-shops-app h3 {
+#airportShopAndEat #mainContent .airport-shops-app h3 {
     color: #fff;
     margin-bottom: 1em;
 }
