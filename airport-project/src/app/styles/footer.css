@@ -110,8 +110,8 @@
 }
 
 #Footer .footer-list-container .footer-list-title {
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 700;
     margin: .85em 0 .5em;
     position: relative;
     text-transform: uppercase;
@@ -142,7 +142,7 @@
 }
 
 #Footer .footer-list-container .footer-list li {
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 100;
     letter-spacing: 0;
     margin: 0;
