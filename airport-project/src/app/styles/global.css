@@ -217,7 +217,7 @@ body #mainContent .heading-subtitle {
 
 body #mainContent .heading-title {
     color: #fff;
-    font-size: 1.75em;
+    font-size: 1.8em;
 }
 
 @media all and (min-width: 992px) {
@@ -244,18 +244,12 @@ body #mainContent .heading-subtitle {
 
 body #mainContent .heading-content {
     color: #fff;
-    font-size: 1.1em;
-}
-
-@media all and (min-width: 768px) {
-    body #mainContent .heading-content {
-        font-size: 1em;
-    }
+    font-size: 1.25em;
 }
 
 @media all and (min-width: 1400px) {
     body #mainContent .heading-content {
-        font-size: 1.3em;
+        font-size: 1.35em;
     }
 }
 
