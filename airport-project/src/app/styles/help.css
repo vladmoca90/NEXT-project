@@ -42,7 +42,7 @@
 #airportHelp .airportHelp-pay .airportHelp-pay--left {
     background: #fff;
     border-right: 1px solid #e6e6e6;
-    padding: 0 2em 2em;
+    padding: 0 1.5em 2em;
 }
 
 @media all and (min-width: 768px) {

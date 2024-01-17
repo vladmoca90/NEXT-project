@@ -88,7 +88,7 @@
 }
 
 #airportGuide .airportGuide-planespotting .airportGuide-planespotting-container h3 {
-  margin: 0;
+  margin-bottom: 1em;
 }
 
 #airportGuide .airportGuide-planespotting .airportGuide-link {
