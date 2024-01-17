@@ -11,7 +11,6 @@ export default function BookingDetails({ searchParams }: {
         bookingCode: string,
     }
 }) {
-
     const [flightDetails, setFlightDetails] = useState<Booking>();
 
     const getBookingData = useCallback(async () => {
