@@ -86,7 +86,7 @@
     background: #fff;
     border: 1px solid #e6e6e6;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: .75em 0 0;
     min-height: 225px;
     position: relative;
