@@ -594,3 +594,7 @@ body #mainContent .bottom-container {
         width: 83%;
     }
 }
+
+body #mainContent .bottom-container h3 {
+    margin: 0;
+}
