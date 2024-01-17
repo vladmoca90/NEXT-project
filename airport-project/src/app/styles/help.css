@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-#airportHelp .airportHelp-banner {
+#airportHelp .airport-help-banner {
     background: url("/images/airportHelp-banner.jpg") no-repeat center center;
     background-size: cover;
 }
@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-#airportHelp .airportHelp-pay {
+#airportHelp .airport-help-pay {
     border: 0;
     display: flex;
     flex-direction: column;
@@ -21,60 +21,60 @@
 }
 
 @media all and (min-width: 768px) {
-    #airportHelp .airportHelp-pay {
+    #airportHelp .airport-help-pay {
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
-#airportHelp .airportHelp-pay .airportHelp-pay--left,
-#airportHelp .airportHelp-pay .airportHelp-pay--right {
+#airportHelp .airport-help-pay .airport-help-pay--left,
+#airportHelp .airport-help-pay .airport-help-pay--right {
     width: auto;
 }
 
 @media all and (min-width: 768px) {
-    #airportHelp .airportHelp-pay .airportHelp-pay--left,
-    #airportHelp .airportHelp-pay .airportHelp-pay--right {
+    #airportHelp .airport-help-pay .airport-help-pay--left,
+    #airportHelp .airport-help-pay .airport-help-pay--right {
         width: 50%;
     }
 }
 
-#airportHelp .airportHelp-pay .airportHelp-pay--left {
+#airportHelp .airport-help-pay .airport-help-pay--left {
     background: #fff;
     border-right: 1px solid #e6e6e6;
     padding: 0 1.5em 2em;
 }
 
 @media all and (min-width: 768px) {
-    #airportHelp .airportHelp-pay .airportHelp-pay--left {
+    #airportHelp .airport-help-pay .airport-help-pay--left {
         padding: 0 1.5em 1em;
     }
 }
 
 @media all and (min-width: 992px) {
-    #airportHelp .airportHelp-pay .airportHelp-pay--left {
+    #airportHelp .airport-help-pay .airport-help-pay--left {
         padding: 0 2em 2em;
         width: 50%;
     }
 }
 
-#airportHelp .airportHelp-pay .airportHelp-pay--left p {
+#airportHelp .airport-help-pay .airport-help-pay--left p {
     color: #222;
     margin-bottom: 1em;
 }
 
-#airportHelp .airportHelp-pay .airportHelp-pay--left h3 {
+#airportHelp .airport-help-pay .airport-help-pay--left h3 {
     margin: 2em 0 1.5em;
 }
 
 @media all and (min-width: 768px) {
-    #airportHelp .airportHelp-pay .airportHelp-pay--left-box {
+    #airportHelp .airport-help-pay .airport-help-pay--left-box {
         float: right;
         max-width: 660px;
     }
 }
 
-#airportHelp .airportHelp-pay .airportHelp-pay--right {
+#airportHelp .airport-help-pay .airport-help-pay--right {
     align-content: center;
     background-size: cover;
     background: url("/images/heathrow-pay.jpg") no-repeat center top;
@@ -86,7 +86,7 @@
 }
 
 @media all and (min-width: 768px) {
-    #airportHelp .airportHelp-pay .airportHelp-pay--right {
+    #airportHelp .airport-help-pay .airport-help-pay--right {
         min-height: 320px;
     }
 }

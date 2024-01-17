@@ -30,7 +30,7 @@ export default function AirportHelp() {
 
     return (
         <div id="airportHelp">
-            <div className="airportHelp-banner top-banner">
+            <div className="airport-help-banner top-banner">
                 <h1 className="heading-title">Help centre for Heathrow Airport users</h1>
             </div>
             <div className="airport-help-container">
@@ -58,16 +58,16 @@ export default function AirportHelp() {
                             </div>
                         );
                     })}
-                <div className="airportHelp-pay">
-                    <div className="airportHelp-pay--left">
-                        <div className="airportHelp-pay--left-box">
+                <div className="airport-help-pay">
+                    <div className="airport-help-pay--left">
+                        <div className="airport-help-pay--left-box">
                             <h3 className="heading-subtitle">Tips to optimize your Heathrow Airport experience!</h3>
                             <p>1. As bug fixes and app improvements may be rolled out from time to time, you may wish to enable automatic app updates on your device settings or keep a look out for latest app versions available.</p>
                             <p>2. Store your Heathrow Account login credentials securely. You may be prompted to re-login. </p>
                             <p>3. Turn on notifications on your device to be updated of maintenance schedules. Alternatively, keep a look out for app advisories on your app - Account - Notifications Inbox (Bell Icon).</p>
                         </div>
                     </div>
-                    <div className="airportHelp-pay--right">
+                    <div className="airport-help-pay--right">
                         <a className="btn btn--large" target="_blank" href="https://www.heathrow.com/customer-support">Click to discover more</a>
                     </div>
                 </div>
