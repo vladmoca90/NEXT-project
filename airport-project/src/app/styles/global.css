@@ -17,7 +17,7 @@ body button {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 700;
     margin: 0;
     overflow: hidden;
@@ -376,7 +376,7 @@ body #mainContent .card-full-container--right {
 
 body #mainContent .card-full-container--left .card-full-title {
     font-size: 1.35em;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: .75em;
     text-transform: uppercase;
 }
