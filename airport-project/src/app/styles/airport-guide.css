@@ -17,6 +17,10 @@
   margin-top: 1.5em !important;
 }
 
+#airportGuide #mainContent .cards .card-content {
+  width: 100%;
+}
+
 #airportGuide .card-content:nth-of-type(1) .card-image {
   background: url("/images/dubai.jpg") no-repeat center center;
   background-size: cover;
