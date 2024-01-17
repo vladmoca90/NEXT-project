@@ -9,16 +9,19 @@
   background-size: cover;
 }
 
-#airportGuide .airport-guide-container {
+#airportGuide .airport-guide-container,
+#mainContent #airportGuide .cards .card-content {
   width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  #mainContent #airportGuide .cards .card-content {
+    width: 32%;
+  }
 }
 
 #airportGuide .airportGuide-cards {
   margin-top: 1.5em !important;
-}
-
-#airportGuide #mainContent .cards .card-content {
-  width: 100%;
 }
 
 #airportGuide .card-content:nth-of-type(1) .card-image {
