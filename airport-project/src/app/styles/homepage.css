@@ -68,7 +68,7 @@ body #mainContent #airportHomepage .heading-title {
 
 @media all and (min-width: 768px) {
     #airportHomepage .airport-minicards-card {
-        margin: 1em 0 0;
+        margin-top: 1em;
     }
 }
 
@@ -127,7 +127,7 @@ body #mainContent #airportHomepage .heading-title {
 #airportHomepage .homepage-bottom {
     background: url("/images/heathrow-events.jpg") no-repeat center center;
     background-size: cover;
-    margin: 2em 0 0;
+    margin-top: 2em;
     padding: 1.2em 0 1.85em;
     width: 100%;
 }
@@ -151,7 +151,7 @@ body #mainContent #airportHomepage .heading-title {
 
 #airportHomepage .homepage-bottom h2,
 #airportHomepage .homepage-bottom h4 {
-    margin: 0 0 1em;
+    margin-bottom: 1em;
 }
 
 #airportHomepage .homepage-bottom h4 {
@@ -169,7 +169,7 @@ body #mainContent #airportHomepage .heading-title {
 
 @media all and (min-width: 768px) {
     #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-        margin: 0 0 2.2em;
+        margin-bottom: 2.2em;
     }
 }
 
