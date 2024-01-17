@@ -66,29 +66,29 @@ export default function FlightInformation({ searchParams }: {
     if (searchParams.flightType === "Departure") {
         return (
             <div className="flight-information">
-                <div className="flightInformation-banner top-banner">
+                <div className="flight-information-banner top-banner">
                     <h1 className="heading-title">View your flight</h1>
                 </div>
-                <div className="flightInformation-container">
+                <div className="flight-information-container">
                     <div>
-                        <div className="flightInformation-top">
-                            <div className="flightInformation-airline">
-                                <div className="flightInformation-tailfin">
+                        <div className="flight-information-top">
+                            <div className="flight-information-airline">
+                                <div className="flight-information-tailfin">
                                     <Image width={100} height={100} className="airline-tailfin" alt={searchParams.flightNumber} src={departureFlight.airlineFin} />
                                     <span className="airline-code">{departureFlight.airlineCode}</span>
                                 </div>
-                                <div className="flightInformation-name">
+                                <div className="flight-information-name">
                                     <span>{departureFlight.airlineName}</span>
                                 </div>
                             </div>
-                            <div className="flightInformation-status">
+                            <div className="flight-information-status">
                                 <span>{departureFlight.status}</span>
                                 <span>{departureFlight.time}</span>
                             </div>
                         </div>
-                        <div className="flightInformation-middle">
+                        <div className="flight-information-middle">
                             <h3>Flight details</h3>
-                            <div className="flightInformation-route">
+                            <div className="flight-information-route">
                                 <div>
                                     <span>London</span>
                                     <span className="flight-arrow">
@@ -97,27 +97,27 @@ export default function FlightInformation({ searchParams }: {
                                     <span>{departureFlight.destination}</span>
                                 </div>
                             </div>
-                            <div className="flightInformation-middle-info">
+                            <div className="flight-information-middle-info">
                                 <div>
-                                    <span className="flightInformation-label">Departure:</span> <span className="flightInformation-value">{departureFlight.time}</span>
+                                    <span className="flight-information-label">Departure:</span> <span className="flight-information-value">{departureFlight.time}</span>
                                 </div>
                                 <div>
-                                    <span className="flightInformation-label">Terminal:</span> <span className="flightInformation-value">{departureFlight.terminal}</span>
+                                    <span className="flight-information-label">Terminal:</span> <span className="flight-information-value">{departureFlight.terminal}</span>
                                 </div>
                                 <div>
-                                    <span className="flightInformation-label">Check-in:</span> <span className="flightInformation-value">{departureFlight.checkIn}</span>
+                                    <span className="flight-information-label">Check-in:</span> <span className="flight-information-value">{departureFlight.checkIn}</span>
                                 </div>
                                 <div>
-                                    <span className="flightInformation-label">Gate:</span> <span className="flightInformation-value">{departureFlight.gate}</span>
+                                    <span className="flight-information-label">Gate:</span> <span className="flight-information-value">{departureFlight.gate}</span>
                                 </div>
                             </div>
-                            <div className="flightInformation-middle-button">
+                            <div className="flight-information-middle-button">
                                 <Link className="btn" target="_blank" href="https://www.britishairways.com/travel/home/public/en_gb/">Contact the airline</Link>
                                 <Link className="btn" target="_blank" href="https://www.flightradar24.com/data/flights">View flight map</Link>
                                 <Link className="btn" target="_blank" href="/flights">View all flights</Link>
                             </div>
                         </div>
-                        <div className="flightInformation-bottom">
+                        <div className="flight-information-bottom">
                             <p>This flight also operates under the following flight numbers under codeshare arrangements with various airlines.</p>
                         </div>
                     </div>
@@ -127,29 +127,29 @@ export default function FlightInformation({ searchParams }: {
     } else {
         return (
             <div className="flight-information">
-                <div className="flightInformation-banner top-banner">
+                <div className="flight-information-banner top-banner">
                     <h1 className="heading-title">View your flight</h1>
                 </div>
-                <div className="flightInformation-container">
+                <div className="flight-information-container">
                     <div>
-                        <div className="flightInformation-top">
-                            <div className="flightInformation-airline">
-                                <div className="flightInformation-tailfin">
+                        <div className="flight-information-top">
+                            <div className="flight-information-airline">
+                                <div className="flight-information-tailfin">
                                     <Image width={100} height={100} className="airline-tailfin" alt={searchParams.flightNumber} src={arrivalFlight.airlineFin} />
                                     <span className="airline-code">{arrivalFlight.airlineCode}</span>
                                 </div>
-                                <div className="flightInformation-name">
+                                <div className="flight-information-name">
                                     <span>{arrivalFlight.airlineName}</span>
                                 </div>
                             </div>
-                            <div className="flightInformation-status">
+                            <div className="flight-information-status">
                                 <span>{arrivalFlight.status}</span>
                                 <span>{arrivalFlight.time}</span>
                             </div>
                         </div>
-                        <div className="flightInformation-middle">
+                        <div className="flight-information-middle">
                             <h3>Flight details</h3>
-                            <div className="flightInformation-route">
+                            <div className="flight-information-route">
                                 <div>
                                     <span>{arrivalFlight.origin}</span>
                                     <span className="flight-arrow">
@@ -158,24 +158,24 @@ export default function FlightInformation({ searchParams }: {
                                     <span>London</span>
                                 </div>
                             </div>
-                            <div className="flightInformation-middle-info">
+                            <div className="flight-information-middle-info">
                                 <div>
-                                    <span className="flightInformation-label">Terminal:</span><span className="flightInformation-value">{arrivalFlight.terminal}</span>
+                                    <span className="flight-information-label">Terminal:</span><span className="flight-information-value">{arrivalFlight.terminal}</span>
                                 </div>
                                 <div>
-                                    <span className="flightInformation-label">Belt:</span><span className="flightInformation-value">{arrivalFlight.belt}</span>
+                                    <span className="flight-information-label">Belt:</span><span className="flight-information-value">{arrivalFlight.belt}</span>
                                 </div>
                                 <div>
-                                    <span className="flightInformation-label"></span>
+                                    <span className="flight-information-label"></span>
                                 </div>
                             </div>
-                            <div className="flightInformation-middle-button">
+                            <div className="flight-information-middle-button">
                                 <Link className="btn" target="_blank" href="https://www.britishairways.com/travel/home/public/en_gb/">Contact the airline</Link>
                                 <Link className="btn" target="_blank" href="https://www.flightradar24.com/data/flights">View flight map</Link>
                                 <Link className="btn" target="_blank" href="/flights">View all flights</Link>
                             </div>
                         </div>
-                        <div className="flightInformation-bottom">
+                        <div className="flight-information-bottom">
                             <p>This flight also operates under the following flight numbers under codeshare arrangements with various airlines.</p>
                         </div>
                     </div>

@@ -1,52 +1,52 @@
 @import "./fonts.css";
 
-body .flight-information .flightInformation-banner {
-  background: url("/images/flightInformation-banner.jpg") no-repeat center center;
+body .flight-information .flight-information-banner {
+  background: url("/images/flight-information-banner.jpg") no-repeat center center;
   background-position-y: 61%;
   background-size: cover;
 }
 
-body .flight-information .flightInformation-container {
+body .flight-information .flight-information-container {
   margin: 0 auto;
   max-width: 96%;
 }
 
 @media all and (min-width: 600px) {
-  body .flight-information .flightInformation-container {
+  body .flight-information .flight-information-container {
     max-width: 500px;
   }
 }
 
 @media all and (min-width: 768px) {
-  body .flight-information .flightInformation-container {
+  body .flight-information .flight-information-container {
     margin: -4em auto 0;
     max-width: 625px;
   }
 }
 
 @media all and (min-width: 992px) {
-  body .flight-information .flightInformation-container {
+  body .flight-information .flight-information-container {
     margin: -5em auto 0;
     max-width: 785px;
   }
 }
 
-.flight-information .flightInformation-container>div {
+.flight-information .flight-information-container>div {
   background: #fff;
   border: 1px solid #ccc;
   margin: 1em 0;
   width: auto;
 }
 
-.flight-information .flightInformation-top,
-.flight-information .flightInformation-airline,
-.flight-information .flightInformation-tailfin,
-.flight-information .flightInformation-middle .flightInformation-middle-info,
-.flight-information .flightInformation-middle .flightInformation-middle-info>div {
+.flight-information .flight-information-top,
+.flight-information .flight-information-airline,
+.flight-information .flight-information-tailfin,
+.flight-information .flight-information-middle .flight-information-middle-info,
+.flight-information .flight-information-middle .flight-information-middle-info>div {
   display: flex;
 }
 
-.flight-information .flightInformation-top {
+.flight-information .flight-information-top {
   align-items: center;
   border-bottom: 1px solid #ccc;
   flex-direction: column;
@@ -57,113 +57,113 @@ body .flight-information .flightInformation-container {
 }
 
 @media all and (min-width: 768px) {
-  .flight-information .flightInformation-top {
+  .flight-information .flight-information-top {
     flex-direction: row;
   }
 }
 
-.flight-information .flightInformation-bottom {
+.flight-information .flight-information-bottom {
   border: 0;
 }
 
-.flight-information .flightInformation-airline {
+.flight-information .flight-information-airline {
   align-items: center;
   justify-content: flex-start;
 }
 
-.flight-information .flightInformation-status {
+.flight-information .flight-information-status {
   margin-top: 1.25em;
 }
 
 @media all and (min-width: 992px) {
-  .flight-information .flightInformation-status {
+  .flight-information .flight-information-status {
     margin-top: 0;
   }
 }
 
-.flight-information .flightInformation-tailfin {
+.flight-information .flight-information-tailfin {
   flex-direction: column;
 }
 
-.flight-information .flightInformation-tailfin>img {
+.flight-information .flight-information-tailfin>img {
   margin-left: .35em;
 }
 
 @media all and (min-width: 768px) {
-  .flight-information .flightInformation-tailfin>img {
+  .flight-information .flight-information-tailfin>img {
     margin-left: 0;
   }
 }
 
-.flight-information .flightInformation-name,
-.flight-information .flightInformation-top .flightInformation-status>span,
-.flight-information .flightInformation-tailfin span.airline-code,
-.flight-information .flightInformation-middle h3,
-.flight-information .flightInformation-middle .flightInformation-route {
+.flight-information .flight-information-name,
+.flight-information .flight-information-top .flight-information-status>span,
+.flight-information .flight-information-tailfin span.airline-code,
+.flight-information .flight-information-middle h3,
+.flight-information .flight-information-middle .flight-information-route {
   font-weight: 700;
   text-align: center;
 }
 
-.flight-information .flightInformation-name {
+.flight-information .flight-information-name {
   font-size: 1.4em;
   text-transform: uppercase;
 }
 
 @media all and (min-width: 1400px) {
-  .flight-information .flightInformation-name {
+  .flight-information .flight-information-name {
     font-size: 1.75em;
   }
 }
 
-.flight-information .flightInformation-name span {
+.flight-information .flight-information-name span {
   margin-left: .5em;
 }
 
-.flight-information .flightInformation-top .flightInformation-status>span {
+.flight-information .flight-information-top .flight-information-status>span {
   display: block;
   margin: 0;
 }
 
-.flight-information .flightInformation-tailfin span.airline-code {
+.flight-information .flight-information-tailfin span.airline-code {
   color: #a0157c;
   margin-left: 1em;
 }
 
-.flight-information .flightInformation-middle {
+.flight-information .flight-information-middle {
   border-bottom: 1px solid #ccc;
   padding: 1.5em 0 1em;
 }
 
-.flight-information .flightInformation-top .flightInformation-status>span,
-.flight-information .flightInformation-tailfin span.airline-code,
-.flight-information .flightInformation-middle h3,
-.flight-information .flightInformation-middle .flightInformation-route {
+.flight-information .flight-information-top .flight-information-status>span,
+.flight-information .flight-information-tailfin span.airline-code,
+.flight-information .flight-information-middle h3,
+.flight-information .flight-information-middle .flight-information-route {
   font-size: 1.5em;
 }
 
-.flight-information .flightInformation-middle h3 {
+.flight-information .flight-information-middle h3 {
   color: #222;
   margin-bottom: 1em;
   text-transform: uppercase;
 }
 
-.flight-information .flightInformation-middle .flightInformation-route {
+.flight-information .flight-information-middle .flight-information-route {
   margin: 1em 0;
 }
 
 @media all and (min-width: 768px) {
-  .flight-information .flightInformation-middle .flightInformation-route {
+  .flight-information .flight-information-middle .flight-information-route {
     margin: 1.5em 0;
   }
 }
 
 @media all and (min-width: 992px) {
-  .flight-information .flightInformation-middle .flightInformation-route {
+  .flight-information .flight-information-middle .flight-information-route {
     margin: 1.85em 0;
   }
 }
 
-.flight-information .flightInformation-middle .flightInformation-route>div {
+.flight-information .flight-information-middle .flight-information-route>div {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -211,13 +211,13 @@ body .flight-information .flightInformation-container {
   }
 }
 
-.flight-information .flightInformation-middle .flightInformation-middle-info {
+.flight-information .flight-information-middle .flight-information-middle-info {
   flex-wrap: wrap;
   font-size: 1.2em;
   justify-content: space-between;
 }
 
-.flight-information .flightInformation-middle .flightInformation-middle-info>div {
+.flight-information .flight-information-middle .flight-information-middle-info>div {
   flex-direction: column;
   margin: .75em 0;
   padding: 0;
@@ -226,29 +226,29 @@ body .flight-information .flightInformation-container {
 }
 
 @media all and (min-width: 768px) {
-  .flight-information .flightInformation-middle .flightInformation-middle-info>div {
+  .flight-information .flight-information-middle .flight-information-middle-info>div {
     width: 22%;
   }
 }
 
-.flight-information .flightInformation-middle .flightInformation-middle-info div .flightInformation-value {
+.flight-information .flight-information-middle .flight-information-middle-info div .flight-information-value {
   color: #2b0b50;
   font-size: 1.3em;
   font-weight: 600;
   margin-top: .33em;
 }
 
-.flight-information .flightInformation-middle .flightInformation-label {
+.flight-information .flight-information-middle .flight-information-label {
   font-size: .73em;
   text-transform: uppercase;
 }
 
-.flight-information .flightInformation-middle .flightInformation-middle-info div .flightInformation-value,
-.flight-information .flightInformation-middle .flightInformation-label {
+.flight-information .flight-information-middle .flight-information-middle-info div .flight-information-value,
+.flight-information .flight-information-middle .flight-information-label {
   font-weight: 600;
 }
 
-.flight-information .flightInformation-middle-button {
+.flight-information .flight-information-middle-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -257,37 +257,37 @@ body .flight-information .flightInformation-container {
 }
 
 @media all and (min-width: 768px) {
-  .flight-information .flightInformation-middle-button {
+  .flight-information .flight-information-middle-button {
     flex-direction: row;
     max-width: 99%;
   }
 }
 
-.flight-information .flightInformation-middle-button a {
+.flight-information .flight-information-middle-button a {
   font-size: 1.25em;
   margin: .5em auto;
   width: 72%;
 }
 
 @media all and (min-width: 768px) {
-  .flight-information .flightInformation-middle-button a {
+  .flight-information .flight-information-middle-button a {
     font-size: .95em;
     width: auto;
   }
 }
 
 @media all and (min-width: 992px) {
-  .flight-information .flightInformation-middle-button a {
+  .flight-information .flight-information-middle-button a {
     font-size: 1em
   }
 }
 
-.flight-information .flightInformation-bottom {
+.flight-information .flight-information-bottom {
   background: #2b0b50;
   padding: 1em 0;
 }
 
-.flight-information .flightInformation-bottom>p {
+.flight-information .flight-information-bottom>p {
   color: #fff;
   padding-left: .75em;
 }

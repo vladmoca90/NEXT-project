@@ -33,7 +33,7 @@ export default function AirportHelp() {
             <div className="airportHelp-banner top-banner">
                 <h1 className="heading-title">Help centre for Heathrow Airport users</h1>
             </div>
-            <div className="airportHelp-container">
+            <div className="airport-help-container">
                 {
                     faqs.map((faq, index) => {
                         return (

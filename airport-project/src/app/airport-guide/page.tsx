@@ -46,10 +46,10 @@ export default function AirportGuide() {
 
     return (
         <div id="airportGuide">
-            <div className="airportGuide-banner top-banner">
+            <div className="airport-guide-banner top-banner">
                 <h1 className="heading-title">Your guide to Heathrow Airport</h1>
             </div>
-            <div className="airportGuide-container">
+            <div className="airport-guide-container">
                 {
                     guides.map((guide, index) => {
                         return (

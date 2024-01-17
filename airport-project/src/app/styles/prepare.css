@@ -8,8 +8,8 @@ body #mainContent #airportPrepare .heading-subtitle {
     width: 98%;
 }
 
-#airportPrepare .airportPrepare-banner {
-    background: url("/images/airportPrepare-banner.jpg") no-repeat center center;
+#airportPrepare .airport-prepare-banner {
+    background: url("/images/airport-prepare-banner.jpg") no-repeat center center;
     background-position-y: 60%;
     background-size: cover;
 }

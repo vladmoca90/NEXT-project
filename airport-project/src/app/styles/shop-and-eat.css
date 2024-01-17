@@ -4,8 +4,8 @@
     margin: 0;
 }
 
-#airportShopAndEat .airportShopAndEat-banner {
-    background: url("/images/airportShopAndEat-banner.jpg") no-repeat center center;
+#airportShopAndEat .airport-shopandeat-banner {
+    background: url("/images/airport-shopandeat-banner.jpg") no-repeat center center;
     background-position-y: 70%;
     background-size: cover;
 }
@@ -124,7 +124,7 @@
     }
 }
 
-#airportShopAndEat .airport-shops-app .googlePlay-img {
+#airportShopAndEat .airport-shops-app .google-play-img {
     height: auto;
     margin: 2em auto 0;
     max-width: 185px;
@@ -135,6 +135,6 @@
     margin: 0 0 1em;
 }
 
-#airportShopAndEat .airport-shops-app .AirportShopAndEat-link {
+#airportShopAndEat .airport-shops-app .airport-shopandeat-link {
     margin-top: 2em;
 }

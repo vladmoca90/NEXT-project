@@ -51,12 +51,12 @@ export default function AirportMaps() {
 
     return (
         <div id="airportMaps">
-            <div className="airportMaps-banner top-banner">
+            <div className="airport-maps-banner top-banner">
                 <h1 className="heading-title">Maps of Heathrow Airports</h1>
             </div>
             <h2 className="heading-subtitle">Getting to your terminal</h2>
-            <div className="airportMaps-container">
-                <div className="airportMaps-text">
+            <div className="airport-maps-container">
+                <div className="airport-maps-text">
                     <p>Heathrow Airport is one of the world&apos;s most challenging and complex environments.
                         Research shows that a large proportion of 80 million annual passengers suffer time pressure
                         and uncertainty - leading to a stressful experience.</p>
@@ -66,7 +66,7 @@ export default function AirportMaps() {
                     <p>The hub-map project consolidated the design into a usability tested standard and applied this
                         physically and digitally in terminals as well as online and on mobiles.</p>
                 </div>
-                <div className="airportMaps-section">
+                <div className="airport-maps-section">
                     {
                         maps.map((map, index) => {
                             return (
@@ -75,7 +75,7 @@ export default function AirportMaps() {
                                         <div className="airport-section--left">
                                             <h3 className="heading-content" key={index}>{map.mapName}</h3>
                                             <p className="content-text">{map.mapText}</p>
-                                            <a className="airportMaps-link btn" target="_blank" key={index} href={map.mapUrl}>{map.mapUrlText}</a>
+                                            <a className="airport-maps-link btn" target="_blank" key={index} href={map.mapUrl}>{map.mapUrlText}</a>
                                         </div>
                                         <div className="airport-section--right"></div>
                                     </div>
@@ -83,16 +83,16 @@ export default function AirportMaps() {
                             )
                         })}
                 </div>
-                <div className="airportMaps-cards bottom-container">
+                <div className="airport-maps-cards bottom-container">
                     <h2 className="heading-subtitle">Terminal maps</h2>
-                    <div className="airportMaps-section">
+                    <div className="airport-maps-section">
                         {
                             terminals.map((terminal, index) => {
                                 return (
                                     <div className="airport-terminal-maps" key={index}>
                                         <h3 className="heading-content" key={index}>{terminal.terminalName}</h3>
                                         <p className="content-text">{terminal.terminalText}</p>
-                                        <a className="airportMaps-link btn btn--large" target="_blank" key={index} href={terminal.terminalUrl}>{terminal.terminalUrlText}</a>
+                                        <a className="airport-maps-link btn btn--large" target="_blank" key={index} href={terminal.terminalUrl}>{terminal.terminalUrlText}</a>
                                     </div>
                                 )
                             })}

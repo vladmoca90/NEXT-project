@@ -72,7 +72,7 @@ export default function AirportPrepare() {
 
     return (
         <div id="airportPrepare">
-            <div className="airportPrepare-banner top-banner">
+            <div className="airport-prepare-banner top-banner">
                 <h1 className="heading-title">Travel formalities at Heathrow Airport</h1>
             </div>
             <h2 className="heading-subtitle">What are the essential documents for travel?</h2>

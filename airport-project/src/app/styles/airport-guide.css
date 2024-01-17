@@ -4,12 +4,12 @@
   margin: 0;
 }
 
-#airportGuide .airportGuide-banner {
-  background: url("/images/airportGuide-banner.jpg") no-repeat center center;
+#airportGuide .airport-guide-banner {
+  background: url("/images/airport-guide-banner.jpg") no-repeat center center;
   background-size: cover;
 }
 
-#airportGuide .airportGuide-container {
+#airportGuide .airport-guide-container {
   width: 100%;
 }
 

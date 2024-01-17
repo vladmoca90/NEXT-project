@@ -486,8 +486,8 @@ body .homepage-container,
 body .homepage-news-container,
 body .card-full-container>div,
 body .airportGuide-statistics,
-body .airportMaps-text,
-body .airportMaps-section,
+body .airport-maps-text,
+body .airport-maps-section,
 body .airport-shops-cards,
 body #airportFlights #flightsTabs #flightsTabs,
 body #airportPrepare .cards {
@@ -499,8 +499,8 @@ body #airportPrepare .cards {
     body .homepage-news-container,
     body .card-full-container>div,
     body .airportGuide-statistics,
-    body .airportMaps-text,
-    body .airportMaps-section,
+    body .airport-maps-text,
+    body .airport-maps-section,
     body #airportFlights #flightsTabs,
     body #airportPrepare .cards {
         max-width: 720px;
@@ -512,8 +512,8 @@ body #airportPrepare .cards {
     body .homepage-news-container,
     body .card-full-container>div,
     body .airportGuide-statistics,
-    body .airportMaps-text,
-    body .airportMaps-section,
+    body .airport-maps-text,
+    body .airport-maps-section,
     body #airportFlights #flightsTabs,
     body #airportPrepare .cards {
         max-width: 960px;
@@ -525,8 +525,8 @@ body #airportPrepare .cards {
     body .homepage-news-container,
     body .card-full-container>div,
     body .airportGuide-statistics,
-    body .airportMaps-text,
-    body .airportMaps-section,
+    body .airport-maps-text,
+    body .airport-maps-section,
     body #airportFlights #flightsTabs,
     body #airportPrepare .cards {
         max-width: 1080px;
@@ -538,8 +538,8 @@ body #airportPrepare .cards {
     body .homepage-news-container,
     body .card-full-container>div,
     body .airportGuide-statistics,
-    body .airportMaps-text,
-    body .airportMaps-section,
+    body .airport-maps-text,
+    body .airport-maps-section,
     body #airportFlights #flightsTabs,
     body #airportPrepare .cards {
         max-width: 1280px;
