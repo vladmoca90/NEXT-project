@@ -148,21 +148,16 @@ body #mainContent #airportHomepage .heading-title {
 }
 
 #airportHomepage .homepage-bottom h4 {
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-transform: uppercase;
-}
-
-@media all and (min-width: 992px) {
-    #airportHomepage .homepage-bottom h4 {
-        font-size: 1.2em;
-    }
 }
 
 #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-    font-size: 1em;
-    font-weight: 600;
-    margin: 0 .5em 2.2em;
-    text-transform: uppercase;
+    
+}
+
+#airportHomepage .homepage-bottom .homepage-title {
+    font-size: 1.65em;
 }
 
 @media all and (min-width: 768px) {
@@ -204,7 +199,7 @@ body #mainContent #airportHomepage .heading-title {
     margin: 1em auto;
     padding: .5em 1em;
     text-align: left;
-    width: 87%;
+    width: 90%;
 }
 
 @media all and (min-width: 768px) {
@@ -221,7 +216,7 @@ body #mainContent #airportHomepage .heading-title {
 }
 
 #airportHomepage .homepage-bottom .homepage-news-card p {
-    font-size: .9em;
+    font-size: 1em;
 }
 
 #airportHomepage .homepage-bottom .homepage-news-link {
