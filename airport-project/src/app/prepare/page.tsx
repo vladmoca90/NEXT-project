@@ -90,7 +90,7 @@ export default function AirportPrepare() {
                     <div className="card-content-text">
                         <h3 className="heading-content">Compulsory vaccination</h3>
                         <p className="content-text">Certain vaccinations may be required. Check the British Diplomatic website to view the health policy for your destination country. Please make sure you have your vaccination certificate ready.</p>
-                        <a className="card-link btn" title="Vaccination status" href="##">conditions</a>
+                        <a className="card-link btn" title="Vaccination status" href="##">Check conditions</a>
                     </div>
                 </div>
             </div>
