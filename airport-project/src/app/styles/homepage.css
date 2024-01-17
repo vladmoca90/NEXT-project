@@ -24,7 +24,7 @@ body #mainContent #airportHomepage .heading-title {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    max-width: 94%;
+    max-width: 100%;
 }
 
 @media all and (min-width: 768px) {
@@ -94,7 +94,7 @@ body #mainContent #airportHomepage .heading-title {
     bottom: 1.1em;
     color: #2b0b50;
     font-weight: 600;
-    font-size: .94em;
+    font-size: .925em;
     position: absolute;
     text-align: center;
 }
