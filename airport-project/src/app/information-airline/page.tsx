@@ -105,7 +105,7 @@ export default function AirlineInformation({ searchParams }: {
 
     return (
         <div id="airportFlights">
-            <div className="airportFlights-banner top-banner">
+            <div className="airport-flights-banner top-banner">
                 <h1 className="heading-title">Check all Arrivals and Departures at Heathrow Airport</h1>
             </div>
             <div id="flightsTabs">

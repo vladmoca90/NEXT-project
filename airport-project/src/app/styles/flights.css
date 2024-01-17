@@ -1,7 +1,7 @@
 @import "./fonts.css";
 
-#airportFlights .airportFlights-banner {
-  background: url("/images/airportFlights-banner.jpg") no-repeat center center;
+#airportFlights .airport-flights-banner {
+  background: url("/images/airport-flights-banner.jpg") no-repeat center center;
   background-position-y: 28%;
   background-size: cover;
 }
