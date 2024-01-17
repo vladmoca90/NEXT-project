@@ -4,8 +4,15 @@
     margin: 0;
 }
 
-body #mainContent #airportPrepare .heading-subtitle {
-    width: 96%;
+body #mainContent #airportPrepare .heading-subtitle,
+body #mainContent #airportPrepare .cards .card-content.cards-half-width {
+    width: 94%;
+}
+
+@media all and (min-width: 992px) {
+    body #mainContent #airportPrepare .cards .card-content.cards-half-width {
+        width: 49%;
+    }
 }
 
 #airportPrepare .airport-prepare-banner {

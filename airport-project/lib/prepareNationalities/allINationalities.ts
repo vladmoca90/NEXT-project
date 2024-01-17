@@ -6,7 +6,7 @@ export const allNationalities: Nationality[] = [
         urlText: "Check requirements",
     },
     {
-        title: "I am an Irish national",
+        title: "I am Irish",
         urlText: "Check requirements",
     },
     {
