@@ -72,9 +72,9 @@
 }
 
 #Footer .footer-contact {
-    font-size: .9em;
+    font-size: 1em;
     line-height: 160%;
-    margin: 1.1em 0;
+    margin: 1.25em 0;
 }
 
 @media all and (min-width: 768px) {
