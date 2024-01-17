@@ -2,7 +2,7 @@
 
 #Footer {
     background: #2b0b50;
-    padding: 1em;
+    padding: 2em 1em 1.5em;
 }
 
 @media all and (min-width: 768px) {
