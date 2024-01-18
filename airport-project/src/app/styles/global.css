@@ -440,7 +440,7 @@ body #mainContent .card-full-container--right>div {
 @media all and (min-width: 992px) {
     body #mainContent .card-full-container--right>div {
         height: 145px;
-        width: 165px;
+        width: 145px;
     }
 
     body #mainContent .card-full-container--right>div:hover {

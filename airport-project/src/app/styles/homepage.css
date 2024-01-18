@@ -106,7 +106,7 @@ body #mainContent #airportHomepage .heading-title {
     text-align: center;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1200px) {
     #airportHomepage .airport-minicards-card .airport-minicards-text {
         font-size: 1em;
     }
