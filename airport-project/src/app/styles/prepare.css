@@ -9,7 +9,7 @@ body #mainContent #airportPrepare .cards .card-content.cards-half-width {
     width: 94%;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
     body #mainContent #airportPrepare .cards .card-content.cards-half-width {
         width: 49%;
     }
