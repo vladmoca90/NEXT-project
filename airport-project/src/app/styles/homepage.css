@@ -37,7 +37,7 @@ body #mainContent #airportHomepage .heading-title {
 @media all and (min-width: 768px) {
     #airportHomepage .airport-minicards {
         justify-content: space-between;
-        max-width: 570px;
+        max-width: 620px;
     }
 }
 

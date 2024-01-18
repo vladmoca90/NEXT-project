@@ -9,7 +9,7 @@ export const allPlans: Plan[] = [
     },
     {
         description: "Find the terminal you need according to your departure or arrival flight.",
-        title: "Find your terminal",
+        title: "Find the your right terminal",
         url: "##",
         urlText: "Search terminal",
     },
