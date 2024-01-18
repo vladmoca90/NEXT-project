@@ -280,12 +280,12 @@ body #mainContent .cards .card-content {
     }
 }
 
-body #mainContent .cards .card-content.cards-half-width {
+body #mainContent .cards .cards-half-width {
     width: 100%;
 }
 
 @media all and (min-width: 768px) {
-    body #mainContent .cards .card-content.cards-half-width {
+    body #mainContent .cards .cards-half-width {
         width: 49%;
     }
 }
