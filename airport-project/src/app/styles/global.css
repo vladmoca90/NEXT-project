@@ -307,7 +307,7 @@ body #mainContent .cards .card-content .card-content-text {
 
 @media all and (min-width: 992px) {
     body #mainContent .cards .card-content .card-content-text {
-        padding: 1.5em;
+        padding: 1em;
     }
 }
 
@@ -321,7 +321,7 @@ body #mainContent .card-full-container {
 
 @media all and (min-width: 992px) {
     body #mainContent .card-full-container {
-        padding: 1.5em 0;
+        padding: 1em 0;
     }
 }
 
