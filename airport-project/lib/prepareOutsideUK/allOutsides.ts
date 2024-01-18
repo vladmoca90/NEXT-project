@@ -10,7 +10,7 @@ export const allOutsides: Outside[] = [
         urlText: "Check requirements",
     },
     {
-        title: "For non-British legal residents",
+        title: "For foreign residents",
         urlText: "Check requirements",
     }
 ]
