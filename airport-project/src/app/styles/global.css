@@ -198,14 +198,14 @@ body #mainContent .content-text {
 
 body #mainContent .heading-title,
 body #mainContent .heading-subtitle {
-    margin: 1.25em 0;
+    margin: 1.25em auto;
     text-align: center;
 }
 
 @media all and (min-width: 992px) {
     body #mainContent .heading-title,
     body #mainContent .heading-subtitle {
-        margin: 1.35em 0 1em;
+        margin: 1.35em auto 1em;
     }
 }
 
