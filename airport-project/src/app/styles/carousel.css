@@ -71,14 +71,8 @@
 
 @media all and (min-width: 992px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 9.75em;
+        left: 11.5em;
         top: 4.75em;
-    }
-}
-
-@media all and (min-width: 1200px) {
-    #airportCarousel .carousel .slide .carousel-content {
-        left: 11em;
     }
 }
 
