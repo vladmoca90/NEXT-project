@@ -558,7 +558,7 @@ body>section {
 
 body #mainContent .bottom-container {
     margin-top: 1.5em;
-    padding: .5em 0 2em;
+    padding: 1em 0 2em;
 }
 
 @media all and (max-width: 767px) {
