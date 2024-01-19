@@ -154,7 +154,7 @@
     color: #fff;
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.15em;
     padding: .65em 0 .55em;
     text-transform: uppercase;
     transition: linear .5s all;
@@ -162,6 +162,10 @@
 }
 
 @media all and (min-width: 992px) {
+    #bookingPopUp .booking-btn-container .btn-booking {
+        font-size: 1.25em;
+    }
+
     #bookingPopUp .booking-btn-container .btn-booking:hover {
         background: #6700cfd0;
     }
