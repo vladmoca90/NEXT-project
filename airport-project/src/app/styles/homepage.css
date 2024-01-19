@@ -160,18 +160,16 @@ body #mainContent #airportHomepage .heading-title {
 }
 
 #airportHomepage .homepage-bottom .homepage-subtitle {
-    font-size: 1.5em;
+    font-size: 1.65em;
+}
+
+#airportHomepage .homepage-bottom .homepage-bottom-subtitle {
+    font-size: 1.25em;
 }
 
 @media all and (min-width: 768px) {
     #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-        margin-bottom: 2.2em;
-    }
-}
-
-@media all and (min-width: 992px) {
-    #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-        font-size: 1.65em;
+        margin-bottom: 1.5em;
     }
 }
 
@@ -182,7 +180,7 @@ body #mainContent #airportHomepage .heading-title {
 
 @media all and (min-width: 768px) {
     #airportHomepage .homepage-bottom .homepage-news {
-        padding: 1.75em 0;
+        padding: 1.7em 0;
     }
 }
 
