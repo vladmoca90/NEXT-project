@@ -3,7 +3,7 @@ import { Destination } from "./destination";
 export const allDestinations: Destination[] = [
     {
         description: "Dubai, UAE",
-        title: "The most popular destination of all!",
+        title: "The most popular destination!",
         url: "https://www.britishairways.com/en-gb/destinations/dubai/flights-to-dubai",
         urlText: "Visit Dubai",
     },
