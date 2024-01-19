@@ -103,6 +103,18 @@
     max-width: 160px;
 }
 
+@media all and (min-width: 768px) {
+    #Footer .footer-socials {
+        max-width: 145px;
+    }   
+}
+
+@media all and (min-width: 992px) {
+    #Footer .footer-socials {
+        max-width: 160px;
+    }   
+}
+
 #Footer .footer-contact span,
 #Footer .footer-contact .footer-socials,
 #Footer .footer-list-container .footer-list-title,
