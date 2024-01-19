@@ -17,11 +17,11 @@ body button {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     margin: 0;
     overflow: hidden;
-    padding: .45em .65em .4em;
+    padding: .4em .65em .35em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -32,6 +32,7 @@ body button {
 @media all and (min-width: 992px) {
     body .btn,
     body button {
+        font-size: 1.2em;
         padding: .5em .65em .45em;
     }
 }
