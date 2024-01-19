@@ -21,12 +21,19 @@ body button {
     font-weight: 700;
     margin: 0;
     overflow: hidden;
-    padding: .5em .65em .45em;
+    padding: .45em .65em .4em;
     position: relative;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     width: auto;
+}
+
+@media all and (min-width: 992px) {
+    body .btn,
+    body button {
+        padding: .5em .65em .45em;
+    }
 }
 
 body #mainContent {
