@@ -427,7 +427,7 @@ body #mainContent .card-full-container--right>div {
     padding: 0 .25em;
     text-align: center;
     transition: linear .5s all;
-    width: 42%;
+    width: 80%;
 }
 
 @media all and (min-width: 600px) {
