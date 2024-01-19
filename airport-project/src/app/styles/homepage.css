@@ -159,12 +159,8 @@ body #mainContent #airportHomepage .heading-title {
     text-transform: uppercase;
 }
 
-#airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-    font-size: 1.25em;
-}
-
-#airportHomepage .homepage-bottom .homepage-title {
-    font-size: 1.65em;
+#airportHomepage .homepage-bottom .homepage-subtitle {
+    font-size: 1.5em;
 }
 
 @media all and (min-width: 768px) {
@@ -175,7 +171,7 @@ body #mainContent #airportHomepage .heading-title {
 
 @media all and (min-width: 992px) {
     #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-        font-size: 1.25em;
+        font-size: 1.65em;
     }
 }
 
