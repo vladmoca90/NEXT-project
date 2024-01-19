@@ -465,10 +465,16 @@ body #mainContent .card-full-container--right>div {
 body #mainContent .card-full-container--right span {
     color: #222;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.15em;
     margin: 0 auto;
     padding: 0;
     text-transform: capitalize;
+}
+
+@media all and (min-width: 600px) {
+    body #mainContent .card-full-container--right span {
+        font-size: 1em;
+    }
 }
 
 @media all and (min-width: 768px) {
