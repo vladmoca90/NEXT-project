@@ -430,6 +430,13 @@ body #mainContent .card-full-container--right>div {
     width: 42%;
 }
 
+@media all and (min-width: 600px) {
+    body #mainContent .card-full-container--right>div {
+        width: 35%;
+    }
+}
+
+
 @media all and (min-width: 768px) {
     body #mainContent .card-full-container--right>div {
         padding: 0;
