@@ -144,12 +144,12 @@ body #mainContent #airportHomepage .heading-title {
     color: #2b0b50;
 }
 
-#airportHomepage .homepage-bottom .homepage-subtitle,
+#airportHomepage .homepage-bottom .heading-subtitle,
 #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
     text-align: center;
 }
 
-#airportHomepage .homepage-bottom .homepage-subtitle,
+#airportHomepage .homepage-bottom .heading-subtitle,
 #airportHomepage .homepage-bottom h4 {
     margin-bottom: 1em;
 }
@@ -159,29 +159,25 @@ body #mainContent #airportHomepage .heading-title {
     text-transform: uppercase;
 }
 
-#airportHomepage .homepage-bottom .homepage-subtitle {
+#airportHomepage .homepage-bottom .heading-subtitle {
     font-size: 1.65em;
     width: 90%;
 }
 
 #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
     font-size: 1.25em;
-}
-
-@media all and (min-width: 768px) {
-    #airportHomepage .homepage-bottom .homepage-bottom-subtitle {
-        margin-bottom: 1em;
-    }
+    margin-bottom: 0;
 }
 
 @media all and (min-width: 992px) {
-    #airportHomepage .homepage-bottom .homepage-subtitle {
+    #airportHomepage .homepage-bottom .heading-subtitle {
         width: 100%;
     }
 }
 
 #airportHomepage .homepage-bottom .homepage-news {
     background: #fff;
+    margin-top: 1em;
     padding: 1.25em 0 1.75em;
 }
 
