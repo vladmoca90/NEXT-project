@@ -21,6 +21,8 @@ export default function BookingPopUp() {
     const bookingBtnActive = useCallback(() => {
         if (surnameText.length == 0 || bookingText.length == 0) {
             return `btn btn-booking disabled`;
+        } else if (!surnameText || !bookingText) {
+            return `btn btn-booking disabled`;
         } else {
             return `btn btn-booking`;
         }

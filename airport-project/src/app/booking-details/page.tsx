@@ -2,7 +2,6 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
-import LazyLoading from "../lazy-loading/page";
 
 const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
