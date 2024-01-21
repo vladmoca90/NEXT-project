@@ -1,4 +1,4 @@
 export interface CheckIn {
-    title: string,
-    content: string,
+    title: string;
+    content: string;
 }
