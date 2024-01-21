@@ -46,7 +46,7 @@
     justify-content: space-between;
 }
 
-#searchBar .search-bar-top .search-bar-dateTime {
+#searchBar .search-bar-top .search-bar-image {
     align-items: center;
     color: #2b0b50;
     display: flex;
@@ -56,7 +56,7 @@
 }
 
 @media all and (min-width: 768px) {
-    #searchBar .search-bar-top .search-bar-dateTime {
+    #searchBar .search-bar-top .search-bar-image {
         font-size: 1.25em;
     }
 }

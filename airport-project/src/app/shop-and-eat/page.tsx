@@ -48,7 +48,7 @@ export default function AirportShopAndEat() {
                 <div>
                     <h3 className="heading-subtitle">Download our app to pre-order food and drinks at Heathrow!</h3>
                     <p className="heading-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a className="airport-shopandeat-link btn btn--large" target="_blank" href="https://play.google.com/store/apps/details?id=com.baa.heathrow&feature=more_from_developer#?t=W251bGwsMSwyLDEwMiwiY29tLmJhYS5oZWF0aHJvdyJd">Download our app</a>
+                    <a rel="noopener" className="airport-shopandeat-link btn btn--large" target="_blank" href="https://play.google.com/store/apps/details?id=com.baa.heathrow&feature=more_from_developer#?t=W251bGwsMSwyLDEwMiwiY29tLmJhYS5oZWF0aHJvdyJd">Download our app</a>
                 </div>
                 <Image alt="Google Play icon" className="google-play-img" src={googlePlayImg} />
             </div>

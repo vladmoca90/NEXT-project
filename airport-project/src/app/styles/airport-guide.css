@@ -20,7 +20,7 @@
   }
 }
 
-#airportGuide .airportGuide-cards {
+#airportGuide .airport-guide-cards {
   margin-top: 1.5em !important;
 }
 
@@ -39,33 +39,33 @@
   background-size: cover;
 }
 
-#airportGuide .airportGuide-statistics-text {
+#airportGuide .airport-guide-statistics-text {
   padding: 0 1em;
 }
 
-#airportGuide .airportGuide-planespotting {
+#airportGuide .airport-guide-planespotting {
   background: url("/images/planespotting.jpg") no-repeat center center;
   background-size: cover;
   margin: 1.5em auto 0;
 }
 
-#airportGuide .airportGuide-planespotting .heading-subtitle,
-#airportGuide .airportGuide-planespotting p {
+#airportGuide .airport-guide-planespotting .heading-subtitle,
+#airportGuide .airport-guide-planespotting p {
   color: #fff !important;
 }
 
-#airportGuide .airportGuide-planespotting .heading-content {
+#airportGuide .airport-guide-planespotting .heading-content {
   font-weight: 600;
   margin: .75em 0;
 }
 
 @media all and (min-width: 992px) {
-  #airportGuide .airportGuide-planespotting .heading-content {
+  #airportGuide .airport-guide-planespotting .heading-content {
     margin: 1em 0;
   }
 }
 
-#airportGuide .airportGuide-planespotting .airportGuide-planespotting-container {
+#airportGuide .airport-guide-planespotting .airport-guide-planespotting-container {
   align-items: center;
   background: transparent;
   display: flex;
@@ -77,27 +77,27 @@
 }
 
 @media all and (min-width: 768px) {
-  #airportGuide .airportGuide-planespotting .airportGuide-planespotting-container {
+  #airportGuide .airport-guide-planespotting .airport-guide-planespotting-container {
     width: 650px;
   }
 }
 
 @media all and (min-width: 992px) {
-  #airportGuide .airportGuide-planespotting .airportGuide-planespotting-container {
+  #airportGuide .airport-guide-planespotting .airport-guide-planespotting-container {
     width: 800px;
   }
 }
 
 @media all and (min-width: 1800px) {
-  #airportGuide .airportGuide-planespotting .airportGuide-planespotting-container {
+  #airportGuide .airport-guide-planespotting .airport-guide-planespotting-container {
     width: 992px;
   }
 }
 
-#airportGuide .airportGuide-planespotting .airportGuide-planespotting-container h3 {
+#airportGuide .airport-guide-planespotting .airport-guide-planespotting-container h3 {
   margin-bottom: 0;
 }
 
-#airportGuide .airportGuide-planespotting .airportGuide-link {
+#airportGuide .airport-guide-planespotting .airport-guide-link {
   margin-top: 1.5em;
 }

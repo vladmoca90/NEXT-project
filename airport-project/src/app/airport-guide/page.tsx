@@ -79,11 +79,11 @@ export default function AirportGuide() {
                             </div>
                         );
                     })}
-                <div className="airportGuide-statistics">
-                    <div className="airportGuide-statistics-text">
+                <div className="airport-guide-statistics">
+                    <div className="airport-guide-statistics-text">
                         <h3 className="heading-subtitle">Destinations</h3>
                         <p>From Heathrow you can fly to 214 destinations across 84 countries on all inhabited continents. And you have 89 airlines to choose from.</p>
-                        <div className="airportGuide-cards cards">
+                        <div className="airport-guide-cards cards">
                             {
                                 destinations.map((destination, index) => {
                                     return (
@@ -101,13 +101,13 @@ export default function AirportGuide() {
                     </div>
                 </div>
             </div>
-            <div className="airportGuide-planespotting">
-                <div className="airportGuide-planespotting-container bottom-container">
+            <div className="airport-guide-planespotting">
+                <div className="airport-guide-planespotting-container bottom-container">
                     <h3 className="heading-subtitle">Getting a unique experience!</h3>
                     <p className="heading-content">Heathrow airport is a paradise for planespotters!</p>
                     <p>With multiple aircraft taking off, landing and taxi-ing across the airfield throughout the day,
                         Heathrow is a real joy for plane enthusiasts.</p>
-                    <a rel="noopener" className="airportGuide-link btn btn--large" target="_blank" href="https://www.spotterguide.net/planespotting/europe/united-kingdom/heathrow-lhr-egll/">Click to discover more</a>
+                    <a rel="noopener" className="airport-guide-link btn btn--large" target="_blank" href="https://www.spotterguide.net/planespotting/europe/united-kingdom/heathrow-lhr-egll/">Click to discover more</a>
                 </div>
             </div>
         </div>

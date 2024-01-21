@@ -40,7 +40,7 @@ export default function AirportSearchBar() {
         <div id="searchBar" className="card-shadow">
             <div className="search-bar-top">
                 <h3 className="search-bar-title"><i className="fa-brands fa-plane"></i>Flight information</h3>
-                <div className="search-bar-dateTime">
+                <div className="search-bar-image">
                     <Image src={searchLogo} className="london-img" alt="London icon" />
                 </div>
             </div>

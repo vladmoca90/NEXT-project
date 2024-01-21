@@ -68,7 +68,7 @@ export default function AirportHelp() {
                         </div>
                     </div>
                     <div className="airport-help-pay--right">
-                        <a className="btn btn--large" target="_blank" href="https://www.heathrow.com/customer-support">Click to discover more</a>
+                        <a rel="noopener" className="btn btn--large" target="_blank" href="https://www.heathrow.com/customer-support">Click to discover more</a>
                     </div>
                 </div>
             </div>
