@@ -44,11 +44,8 @@ export default function BookingDetails({ searchParams }: {
 
     if (!flightDetails) {
         return (
-            <div>
-                <LazyLoading />
-                <div className="booking-details--not-found">
-                    <h3>No booking could be found!</h3>
-                </div>
+            <div className="booking-details--not-found">
+                <h3>No booking could be found!</h3>
             </div>
         );
     } else {
