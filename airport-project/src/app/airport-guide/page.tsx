@@ -28,7 +28,12 @@ export default function AirportGuide() {
     }, [guidesUrl]);
 
     const getDestinations = useCallback(async () => {
-        const res = await fetch(destinationsUrl);
+        const res = await fetch(destinationsUrl, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
         if (!res.ok) {
             throw new Error("Failed to fetch data");

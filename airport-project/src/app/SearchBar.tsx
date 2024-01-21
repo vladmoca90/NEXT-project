@@ -24,10 +24,13 @@ export default function AirportSearchBar() {
                 },
             });
 
-            const body = await res.json();
-            const result = body.result;
+            if (!res.ok) {
+                throw new Error("Failed to fetch data");
+            }
 
-            setResults(result);
+            const data = await res.json();
+
+            setResults(data.body);
         } else {
             setResults([]);
         }
