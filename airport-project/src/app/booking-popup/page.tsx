@@ -64,8 +64,8 @@ export default function BookingPopUp() {
                     <Link href={{
                         pathname: "/booking-details",
                         query: {
-                            "surname": surnameText,
-                            "bookingCode": bookingText,
+                            "surname": surnameText.trim(),
+                            "bookingCode": bookingText.trim(),
                         }
                     }} className={bookingBtnActive()} onClick={onClick}>Search your booking</Link>
                 </div>
