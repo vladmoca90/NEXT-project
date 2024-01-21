@@ -107,7 +107,7 @@ export default function AirportGuide() {
                     <p className="heading-content">Heathrow airport is a paradise for planespotters!</p>
                     <p>With multiple aircraft taking off, landing and taxi-ing across the airfield throughout the day,
                         Heathrow is a real joy for plane enthusiasts.</p>
-                    <a className="airportGuide-link btn btn--large" target="_blank" href="https://www.spotterguide.net/planespotting/europe/united-kingdom/heathrow-lhr-egll/">Click to discover more</a>
+                    <a rel="noopener" className="airportGuide-link btn btn--large" target="_blank" href="https://www.spotterguide.net/planespotting/europe/united-kingdom/heathrow-lhr-egll/">Click to discover more</a>
                 </div>
             </div>
         </div>
