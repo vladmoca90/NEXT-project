@@ -2,6 +2,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
+import LazyLoading from "../lazy-loading/page";
 
 const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
@@ -43,8 +44,11 @@ export default function BookingDetails({ searchParams }: {
 
     if (!flightDetails) {
         return (
-            <div className="booking-details--not-found">
-                <h3>No booking could be found!</h3>
+            <div>
+                <LazyLoading />
+                <div className="booking-details--not-found">
+                    <h3>No booking could be found!</h3>
+                </div>
             </div>
         );
     } else {
