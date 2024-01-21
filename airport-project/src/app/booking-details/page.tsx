@@ -2,8 +2,8 @@
 "use client";
 import dynamic from "next/dynamic";
 
-const DynamicHeavyComponent = dynamic(() => import("../booking-content/page"), {
-    ssr: false,
+const LazyLoading = dynamic(() => import("../booking-content/page"), {
+    ssr: true,
     loading: () => <div>Loading...</div>
 });
 
@@ -14,7 +14,7 @@ export default function BookingDetails({ searchParams }: {
     }
 }) {
     return (
-        <DynamicHeavyComponent searchParams={{
+        <LazyLoading searchParams={{
             surname: searchParams.surname,
             bookingCode: searchParams.bookingCode
         }} />
