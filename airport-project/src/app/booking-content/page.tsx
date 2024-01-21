@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
 
-//const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
+const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
 export default function BookingContent({ searchParams }: {
     searchParams: {
@@ -11,35 +11,35 @@ export default function BookingContent({ searchParams }: {
         bookingCode: string,
     }
 }) {
-    const [flightDetails] = useState<Booking>();
+    const [flightDetails, setFlightDetails] = useState<Booking>();
 
-    // const getBookingData = useCallback(async () => {
-    //     const res = await fetch(bookingsUrl, {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify({
-    //             "surname": searchParams.surname,
-    //             "bookingCode": searchParams.bookingCode,
-    //         }),
-    //     })
+    const getBookingData = useCallback(async () => {
+        const res = await fetch(bookingsUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                "surname": searchParams.surname,
+                "bookingCode": searchParams.bookingCode,
+            }),
+        })
 
-    //     if (!res.ok) {
-    //         console.log("The details are NOT valid!");
-    //         return;
-    //     } else {
-    //         console.log("The details are valid!");
-    //     }
+        if (!res.ok) {
+            console.log("The details are NOT valid!");
+            return;
+        } else {
+            console.log("The details are valid!");
+        }
 
-    //     const data = await res.json();
+        const data = await res.json();
 
-    //     setFlightDetails(data.body);
-    // }, [searchParams.bookingCode, searchParams.surname]);
+        setFlightDetails(data.body);
+    }, [searchParams.bookingCode, searchParams.surname]);
 
-    // useEffect(() => {
-    //     getBookingData();
-    // }, [getBookingData]);
+    useEffect(() => {
+        getBookingData();
+    }, [getBookingData]);
 
     if (!flightDetails) {
         return (
