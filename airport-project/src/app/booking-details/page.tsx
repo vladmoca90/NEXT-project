@@ -49,7 +49,7 @@ export default function BookingDetails({ searchParams }: {
     }, [getBookingData]);
     
     return (
-        <BookingContent searchParams={{
+        <DynamicHeavyComponent searchParams={{
             surname: searchParams.surname,
             bookingCode: searchParams.bookingCode
         }} />
