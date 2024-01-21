@@ -2,15 +2,15 @@
 "use client";
 import { Suspense, lazy } from "react";
 import BookingContent from "../booking-content/page";
-import LazyLoading from "../lazyLoading";
+import Loading from "../lazyLoading";
 
 const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
-const Loading = lazy(() => delayForDemo(import("../lazyLoading")));
+const LazyLoading = lazy(() => delayForDemo(import("../lazyLoading")));
 
 export default function BookingDetails() {
     return (
-        <Suspense fallback={<LazyLoading />}>
+        <Suspense fallback={<Loading />}>
             <BookingContent searchParams={{
                 surname: "",
                 bookingCode: ""
