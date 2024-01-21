@@ -27,7 +27,9 @@ export async function GET(request: NextRequest) {
         );
     } else {
         return NextResponse.json(
-            { flight },
+            {
+                flight
+            },
             {
                 status: 200
             },

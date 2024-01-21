@@ -57,10 +57,7 @@ export async function GET(request: NextRequest) {
     });
 
     const flightAndAirlinesList = airlineFinAndName.concat(departureFinAndName);
-
     const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalFinAndName);
-
-    console.log(flightAndAirlinesListTotal);
 
     return NextResponse.json(
         {
