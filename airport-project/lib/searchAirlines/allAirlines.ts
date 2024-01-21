@@ -71,11 +71,11 @@ export const allAirlines: Airline[] = [
     },
     {
         name: "Qantas",
-        fin: "/images/tailfins/OF-tailfin.jpg",
+        fin: "/images/tailfins/QF-tailfin.jpeg",
     },
     {
         name: "Qatar Airways",
-        fin: "/images/tailfins/OR-tailfin.jpg",
+        fin: "/images/tailfins/QR-tailfin.jpeg",
     },
     {
         name: "TAROM",
