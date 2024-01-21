@@ -3,8 +3,7 @@
 import dynamic from "next/dynamic";
 
 const LazyLoading = dynamic(() => import("../booking-content/page"), {
-    ssr: true,
-    loading: () => <div>Loading...</div>
+    ssr: false,
 });
 
 export default function BookingDetails({ searchParams }: {
