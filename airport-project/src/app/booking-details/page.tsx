@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import Image from "next/image";
 import dynamic from "next/dynamic";
+import loadingImg from "../../../public/images/loading.gif";
 
 const LazyLoading = dynamic(() => import("../booking-content/page"), {
     ssr: false,
+    loading: () => <Image alt="Loading icon" className="loading-img" src={loadingImg} />
 });
 
 export default function BookingDetails({ searchParams }: {
