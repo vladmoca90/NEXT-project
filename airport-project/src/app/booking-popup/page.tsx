@@ -62,7 +62,7 @@ export default function BookingPopUp() {
             <div className="booking-bottom">
                 <div id="bookingBtn" className="booking-btn-container">
                     <Link href={{
-                        pathname: "/booking-details",
+                        pathname: "/booking-content",
                         query: {
                             "surname": surnameText.trim(),
                             "bookingCode": bookingText.trim(),
