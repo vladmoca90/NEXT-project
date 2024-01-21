@@ -1,10 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import dynamic from "next/dynamic";
 import { useCallback, useEffect, useState } from "react";
 import BookingContent from "../booking-content/page";
 import { Booking } from "../../../lib/booking/booking";
 
 const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
+
+const DynamicHeavyComponent = dynamic(() => import("../booking-content/page"), {
+    ssr: false,
+    loading: () => <p>Loading...</p>
+});
 
 export default function BookingDetails({ searchParams }: {
     searchParams: {
