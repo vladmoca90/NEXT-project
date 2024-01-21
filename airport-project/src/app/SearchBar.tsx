@@ -30,7 +30,7 @@ export default function AirportSearchBar() {
 
             const data = await res.json();
 
-            setResults(data.body);
+            setResults(data.result);
         } else {
             setResults([]);
         }
