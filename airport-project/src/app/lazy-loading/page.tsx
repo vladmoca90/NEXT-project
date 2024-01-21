@@ -1,15 +1,16 @@
 "use client";
-//import Image from "next/image";
-//import loadingIcon from "./../../../public/images/loading.gif";
-import React, { lazy, Suspense } from "react";
+import Image from "next/image";
+import loadingIcon from "./../../../public/images/loading.gif";
+import React, { Suspense, useCallback, useEffect } from "react";
+import BookingDetails from "./../booking-details/page";
 
-const LazyComponent = lazy(() => import("./../booking-details/page"));
+const loading = <Image width={100} height={100} src={loadingIcon} alt="loading" />;
 
 export default function LazyLoading() {
     return (
         <div>
-            <Suspense fallback={<div>Loading...</div>}>
-                <LazyComponent searchParams={{
+            <Suspense fallback={loading}>
+                <BookingDetails searchParams={{
                     surname: "",
                     bookingCode: ""
                 }} />
