@@ -1,6 +1,17 @@
 .loading-img {
     display: block;
-    margin: 0 auto;
+}
+
+.loading-img,
+.booking-details--not-found {
+    margin: 8vh auto;
+}
+
+@media all and (min-width: 768px) {
+    .loading-img,
+    .booking-details--not-found {
+        margin: 20vh auto;
+    }
 }
 
 .booking-details--not-found {
@@ -8,7 +19,6 @@
     border: 1px solid #e6e6e6;
     display: block;
     font-size: 1.5em;
-    margin: 8vh auto;
     padding: 1em;
     text-align: center;
     width: 80%;
@@ -23,7 +33,6 @@
 @media all and (min-width: 768px) {
     .booking-details--not-found {
         font-size: 1.85em;
-        margin: 20vh auto;
         padding: 2em 1em;
         width: 72%;
     }
@@ -37,9 +46,9 @@
 }
 
 .booking-details--found {
-    background: hsl(0, 0%, 100%);
+    background: #fff;
     border: 1px solid #e6e6e6;
-    margin: .75em auto;
+    margin: 1em auto;
     width: 94%;
 }
 
