@@ -229,11 +229,11 @@
 }
 
 .carousel .control-next.control-arrow {
-    right: 1em !important;
+    right: 20px !important;
 }
 
 .carousel .control-prev.control-arrow {
-    left: 1em !important;
+    left: 20px !important;
 }
 
 @media all and (min-width: 992px) {
@@ -246,11 +246,11 @@
     }
 
     .carousel .control-next.control-arrow {
-        right: 2em !important;
+        right: 35px !important;
     }
 
     .carousel .control-prev.control-arrow {
-        left: 2em !important;
+        left: 35px !important;
     }
 
     .carousel .control-arrow:before,
