@@ -90,15 +90,9 @@
     }
 }
 
-@media all and (min-width: 1700px) {
-    #airportCarousel .carousel .slide .carousel-content {
-        top: 6em;
-    }
-}
-
 @media all and (min-width: 1900px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 25em;
+        left: 22em;
     }
 }
 
