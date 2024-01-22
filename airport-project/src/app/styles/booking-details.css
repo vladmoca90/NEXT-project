@@ -53,7 +53,7 @@
     width: 100%;
 }
 
-/* @media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
     .booking-details--found {
         width: 615px;
     }
@@ -63,7 +63,7 @@
     .booking-details--found {
         width: 680px;
     }
-} */
+}
 
 .booking-airline {
     align-items: center;
