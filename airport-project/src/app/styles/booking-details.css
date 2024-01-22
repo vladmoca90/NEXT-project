@@ -50,10 +50,10 @@
     background: #fff;
     border: 1px solid #e6e6e6;
     margin: 1em auto;
-    width: 94%;
+    width: 100%;
 }
 
-@media all and (min-width: 768px) {
+/* @media all and (min-width: 768px) {
     .booking-details--found {
         width: 615px;
     }
@@ -63,7 +63,7 @@
     .booking-details--found {
         width: 680px;
     }
-}
+} */
 
 .booking-airline {
     align-items: center;

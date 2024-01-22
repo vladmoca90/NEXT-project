@@ -46,6 +46,9 @@ export default function BookingContent({ searchParams }: {
         return (
             <div className="booking-details--found">
                 <span className="booking-details-title">Your ticket itinerary</span>
+                <div className="booking-details--not-found">
+                    <h3>No booking could be found!</h3>
+                </div>
                 <div className="booking-details-top">
                     <span className="booking-surname">{searchParams.surname}</span>
                     <span className="booking-code">{searchParams.bookingCode}</span>
@@ -65,9 +68,6 @@ export default function BookingContent({ searchParams }: {
                 <div className="booking-details-bottom">
                     <span><span className="booking-label">Terminal: </span>-</span>
                     <span><span className="booking-label">Seat: </span>-</span>
-                </div>
-                <div className="booking-details--not-found">
-                    <h3>No booking could be found!</h3>
                 </div>
             </div>
         );
