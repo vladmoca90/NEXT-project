@@ -2,7 +2,7 @@
 
 #Footer {
     background: #2b0b50;
-    padding: 2em 1em 1.5em;
+    padding: 2em 0 2em 1em;
 }
 
 @media all and (min-width: 768px) {
@@ -128,7 +128,7 @@
 }
 
 #Footer .footer-list-container .footer-list-title {
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: .85em 0 .5em;
     position: relative;
@@ -138,7 +138,7 @@
 @media all and (min-width: 768px) {
     #Footer .footer-list-container .footer-list-title {
         font-size: 1em;
-        margin: 0 0 1em;
+        margin-bottom: 1em;
     }
 }
 
