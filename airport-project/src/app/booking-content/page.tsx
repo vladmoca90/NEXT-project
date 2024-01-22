@@ -44,10 +44,9 @@ export default function BookingContent({ searchParams }: {
 
     if (!flightDetails) {
         return (
-            // <div className="booking-details--not-found">
-            //     <h3>No booking could be found!</h3>
-            // </div>
-            redirect('/')
+            <div className="booking-details--not-found">
+                <h3>No booking could be found!</h3>
+            </div>
         );
     } else {
         return (
