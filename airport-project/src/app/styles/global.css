@@ -6,7 +6,7 @@
 
 body {
     background: #f8f8f8 !important;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 
