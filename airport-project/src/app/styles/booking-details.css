@@ -9,36 +9,30 @@
     display: block;
     font-size: 1.5em;
     margin: 8vh auto;
-    max-width: 80%;
     padding: 1em;
     text-align: center;
+    width: 80%;
 }
 
-.booking-details--not-found h3 {
-    color: #df0000;
-    font-weight: 600;
+@media all and (min-width: 600px) {
+    .booking-details--not-found {
+        width: 63%;
+    }
 }
 
 @media all and (min-width: 768px) {
     .booking-details--not-found {
         font-size: 1.85em;
-        padding: 1.5em;
         margin: 20vh auto;
-        max-width: 50%;
+        padding: 2em 1em;
+        width: 72%;
     }
 }
 
 @media all and (min-width: 992px) {
     .booking-details--not-found {
-        font-size: 2em;
-        padding: 2em 1em;
-        width: 40%;
-    }
-}
-
-@media all and (min-width: 1800px) {
-    .booking-details--not-found {
-        width: 27%;
+        font-size: 2.25em;
+        width: 56%;
     }
 }
 
