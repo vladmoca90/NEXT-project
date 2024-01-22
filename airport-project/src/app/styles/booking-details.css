@@ -10,6 +10,13 @@
 @media all and (min-width: 768px) {
     .loading-img,
     .booking-details--not-found {
+        margin: 29vh auto;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .loading-img,
+    .booking-details--not-found {
         margin: 20vh auto;
     }
 }
@@ -26,22 +33,16 @@
 
 @media all and (min-width: 600px) {
     .booking-details--not-found {
-        width: 63%;
+        font-size: 1.9em;
+        padding: 1.25em 0;
+        width: 525px;
     }
 }
 
 @media all and (min-width: 768px) {
     .booking-details--not-found {
-        font-size: 1.85em;
-        padding: 2em 1em;
-        width: 72%;
-    }
-}
-
-@media all and (min-width: 992px) {
-    .booking-details--not-found {
         font-size: 2.25em;
-        width: 56%;
+        width: 600px;
     }
 }
 
