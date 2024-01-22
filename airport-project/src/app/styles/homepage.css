@@ -193,7 +193,7 @@ body #mainContent #airportHomepage .heading-title {
     flex-wrap: wrap;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
     #airportHomepage .homepage-bottom .homepage-news-container {
         flex-wrap: nowrap;
     }
