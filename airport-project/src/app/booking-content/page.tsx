@@ -11,7 +11,7 @@ export default function BookingContent({ searchParams }: {
         bookingCode: string,
     }
 }) {
-    const [flightDetails, setFlightDetails] = useState<Booking>();
+    const [flightDetails, setFlightDetails] = useState<Booking>([] as any);
 
     const getBookingData = useCallback(async () => {
         const res = await fetch(bookingsUrl, {
@@ -41,13 +41,13 @@ export default function BookingContent({ searchParams }: {
         getBookingData();
     }, [getBookingData]);
 
-    if (!flightDetails) {
-        return (
-            <div className="booking-details--not-found">
-                <h3>No booking could be found!</h3>
-            </div>
-        );
-    } else {
+    // if (!flightDetails) {
+    //     return (
+    //         <div className="booking-details--not-found">
+    //             <h3>No booking could be found!</h3>
+    //         </div>
+    //     );
+    // } else {
         return (
             <div className="booking-details--found">
                 <span className="booking-details-title">Your ticket itinerary</span>
@@ -74,5 +74,5 @@ export default function BookingContent({ searchParams }: {
                 </div>
             </div>
         );
-    }
+   // }
 }
