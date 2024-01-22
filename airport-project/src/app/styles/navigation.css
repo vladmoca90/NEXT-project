@@ -54,12 +54,6 @@ body {
   }
 }
 
-@media all and (min-width: 992px) {
-  .top-nav-container {
-    width: 960px;
-  }
-}
-
 @media all and (min-width: 1200px) {
   .top-nav-container {
     width: 1080px;
