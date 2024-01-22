@@ -228,12 +228,14 @@
     height: auto;
 }
 
-.carousel .control-next.control-arrow {
-    right: 1.25em !important;
-}
+@media all and (min-width: 768px) {
+    .carousel .control-next.control-arrow {
+        right: 20px !important;
+    }
 
-.carousel .control-prev.control-arrow {
-    left: 1.25em !important;
+    .carousel .control-prev.control-arrow {
+        left: 20px !important;
+    }
 }
 
 @media all and (min-width: 992px) {
@@ -246,11 +248,11 @@
     }
 
     .carousel .control-next.control-arrow {
-        right: 2em !important;
+        right: 35px !important;
     }
 
     .carousel .control-prev.control-arrow {
-        left: 2em !important;
+        left: 35px !important;
     }
 
     .carousel .control-arrow:before,
