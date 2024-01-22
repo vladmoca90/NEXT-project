@@ -79,20 +79,26 @@
 @media all and (min-width: 1400px) {
     #airportCarousel .carousel .slide .carousel-content {
         left: 13em;
-        top: 6em;
+        top: 5em;
         width: 800px;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    #airportCarousel .carousel .slide .carousel-content {
+        left: 20em;
     }
 }
 
 @media all and (min-width: 1700px) {
     #airportCarousel .carousel .slide .carousel-content {
-        top: 7em;
+        top: 6em;
     }
 }
 
 @media all and (min-width: 1900px) {
     #airportCarousel .carousel .slide .carousel-content {
-        left: 25%;
+        left: 25em;
     }
 }
 
