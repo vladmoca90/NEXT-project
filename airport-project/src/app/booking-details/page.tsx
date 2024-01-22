@@ -6,7 +6,7 @@ import loadingImg from "../../../public/images/loading.gif";
 
 const LazyLoading = dynamic(() => import("../booking-content/page"), {
     ssr: false,
-        loading: () => <div className=""><Image width={100} height={100} alt="Loading icon" className="loading-img" src={loadingImg} /></div>
+        loading: () => <Image width={100} height={100} alt="Loading icon" className="loading-img" src={loadingImg} />
 });
 
 export default function BookingDetails({ searchParams }: {
