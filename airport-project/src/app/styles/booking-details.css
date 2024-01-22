@@ -59,7 +59,7 @@
 .booking-tailfin {
     height: auto;
     margin-right: .33em;
-    max-width: 60px;
+    width: 60px;
 }
 
 @media all and (min-width: 768px) {
@@ -70,7 +70,7 @@
 
 @media all and (min-width: 992px) {
     .booking-tailfin {
-        max-width: 39px;
+        width: 39px;
     }
 }
 
@@ -166,7 +166,5 @@
 }
 
 .booking-details-bottom {
-    display: flex;
-    justify-content: space-between;
     text-align: center;
 }
