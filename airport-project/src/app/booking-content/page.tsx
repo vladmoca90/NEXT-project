@@ -2,6 +2,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
+import { redirect } from "next/navigation";
 
 const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
@@ -43,9 +44,10 @@ export default function BookingContent({ searchParams }: {
 
     if (!flightDetails) {
         return (
-            <div className="booking-details--not-found">
-                <h3>No booking could be found!</h3>
-            </div>
+            // <div className="booking-details--not-found">
+            //     <h3>No booking could be found!</h3>
+            // </div>
+            redirect('/')
         );
     } else {
         return (
