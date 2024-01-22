@@ -14,7 +14,7 @@ export default function BookingDetails({ searchParams }: {
         bookingCode: string,
     }
 }) {
-    
+
     return (
         <LazyLoading searchParams={{
             surname: searchParams.surname,
