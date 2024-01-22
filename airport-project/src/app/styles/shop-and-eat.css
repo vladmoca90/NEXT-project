@@ -65,13 +65,25 @@
 
 @media all and (min-width: 992px) {
     #airportShopAndEat .airport-shops-cards .shops-card {
-        width: 145px;
+        width: 158px;
     }
 }
 
 @media all and (min-width: 1200px) {
     #airportShopAndEat .airport-shops-cards .shops-card {
         width: 125px;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    #airportShopAndEat .airport-shops-cards .shops-card {
+        width: 145px;
+    }
+}
+
+@media all and (min-width: 1700px) {
+    #airportShopAndEat .airport-shops-cards .shops-card {
+        width: 170px;
     }
 }
 
