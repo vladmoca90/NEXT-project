@@ -55,6 +55,12 @@
 
 @media all and (min-width: 768px) {
     .booking-details--found {
+        width: 615px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .booking-details--found {
         width: 680px;
     }
 }
