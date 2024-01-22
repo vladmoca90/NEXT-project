@@ -14,7 +14,7 @@
     text-align: center;
 }
 
-.booking-details--not-found p {
+.booking-details--not-found h3 {
     color: #df0000;
     font-weight: 600;
 }
