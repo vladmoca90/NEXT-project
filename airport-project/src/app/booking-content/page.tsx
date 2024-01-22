@@ -44,8 +44,31 @@ export default function BookingContent({ searchParams }: {
 
     if (!flightDetails) {
         return (
-            <div className="booking-details--not-found">
-                <h3>No booking could be found!</h3>
+            <div className="booking-details--found">
+                <span className="booking-details-title">Your ticket itinerary</span>
+                <div className="booking-details-top">
+                    <span className="booking-surname">{searchParams.surname}</span>
+                    <span className="booking-code">{searchParams.bookingCode}</span>
+                </div>
+                <div className="booking-details-middle">
+                    <span><span className="booking-label">Ticket number: </span>-</span>
+                    <span><span className="booking-label">Time: </span>-</span>
+                    <span><span className="booking-label">Airline: </span>-</span>
+                    <span>
+                        <span className="booking-label">Airline Number:</span>
+                        <span className="booking-airline">
+                            -
+                        </span>
+                    </span>
+                    <span><span className="booking-label">Destination: </span>-</span>
+                </div>
+                <div className="booking-details-bottom">
+                    <span><span className="booking-label">Terminal: </span>-</span>
+                    <span><span className="booking-label">Seat: </span>-</span>
+                </div>
+                <div className="booking-details--not-found">
+                    <h3>No booking could be found!</h3>
+                </div>
             </div>
         );
     } else {
