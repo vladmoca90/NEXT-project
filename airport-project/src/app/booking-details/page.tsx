@@ -3,8 +3,6 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import loadingImg from "../../../public/images/loading.gif";
-import { useState } from "react";
-import { Booking } from "../../../lib/booking/booking";
 
 const LazyLoading = dynamic(() => import("../booking-content/page"), {
     ssr: false,
@@ -17,20 +15,11 @@ export default function BookingDetails({ searchParams }: {
         bookingCode: string,
     }
 }) {
-    const [flightDetails] = useState<Booking>();
-
-    if (!flightDetails) {
-        return (
-            <div className="booking-details--not-found">
-                <h3>No booking could be found!</h3>
-            </div>
-        );
-    } else {
-        return (
-            <LazyLoading searchParams={{
-                surname: searchParams.surname,
-                bookingCode: searchParams.bookingCode
-            }} />
-        );
-    }
+    
+    return (
+        <LazyLoading searchParams={{
+            surname: searchParams.surname,
+            bookingCode: searchParams.bookingCode
+        }} />
+    );
 }
