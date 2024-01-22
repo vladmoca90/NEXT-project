@@ -33,12 +33,6 @@ body {
   text-transform: uppercase;
 }
 
-@media all and (min-width: 992px) {
-  .top-nav {
-    padding: 1.25em 1em;
-  }
-}
-
 .top-nav-container {
   align-items: center;
   display: flex;
@@ -46,6 +40,18 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   width: 85%;
+}
+
+@media all and (min-width: 768px) {
+  .top-nav-container {
+    width: 755px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .top-nav-container {
+    width: 960px;
+  }
 }
 
 @media all and (min-width: 992px) {
