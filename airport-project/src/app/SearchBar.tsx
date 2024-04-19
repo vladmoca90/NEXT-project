@@ -69,7 +69,7 @@ export default function AirportSearchBar() {
                                         </li>
                                     );
                                 }
-                                else {
+                                if (result.type === "Airline") {
                                     return (
                                         <li className="search-bar-list" key={index}>
                                             <Link
@@ -82,6 +82,10 @@ export default function AirportSearchBar() {
                                                 <Image width={45} height={45} src={result.airlineFin} alt={result.name} />{result.name}
                                             </Link>
                                         </li>
+                                    );
+                                } else {
+                                    return (
+                                        <li className="search-bar-list search-flight-airline-error" key={index}>No flight or airline could be found</li>
                                     );
                                 }
                             })

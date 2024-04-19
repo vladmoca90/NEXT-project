@@ -188,3 +188,9 @@
 #searchBarOptions>li a img {
     margin-right: .5em;
 }
+
+.search-flight-airline-error {
+    color: #b71b00;
+    font-size: 1.25em;
+    font-weight: 400;
+}
