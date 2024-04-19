@@ -8,9 +8,9 @@ import AirportCarousel from "./AirportCarousel";
 import SearchBar from "./SearchBar";
 
 export default function AirportHomepage() {
-    let minicardsUrl = "https://airport-next-new.vercel.app/api/minicards";
-    let plansUrl = "https://airport-next-new.vercel.app/api/plans";
-    let eventsUrl = "https://airport-next-new.vercel.app/api/events";
+    let minicardsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/minicards";
+    let plansUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/plans";
+    let eventsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/events";
 
     const [minicards, setMinicards] = useState<Minicard[]>([]);
     const [plans, setPlans] = useState<Plan[]>([]);

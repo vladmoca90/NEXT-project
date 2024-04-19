@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
 
-const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
+const bookingsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/bookings";
 
 export default function BookingContent({ searchParams }: {
     searchParams: {

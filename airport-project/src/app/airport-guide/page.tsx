@@ -4,8 +4,8 @@ import { Destination } from "../../../lib/guideDestinations/destination";
 import { Guide } from "../../../lib/guideCards/guide";
 
 export default function AirportGuide() {
-    let destinationsUrl = "https://airport-next-new.vercel.app/api/guide-destinations";
-    let guidesUrl = "https://airport-next-new.vercel.app/api/guide-cards";
+    let destinationsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/guide-destinations";
+    let guidesUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/guide-cards";
 
     const [destinations, setDestinations] = useState<Destination[]>([]);
     const [guides, setGuides] = useState<Guide[]>([]);

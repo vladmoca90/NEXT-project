@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Shop } from "../../../lib/shopAndEat/shop";
 
 export default function AirportShopAndEat() {
-    let shopsUrl = "https://airport-next-new.vercel.app/api/shop-and-eat";
+    let shopsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/shop-and-eat";
 
     const [shops, setShops] = useState<Shop[]>([]);
 

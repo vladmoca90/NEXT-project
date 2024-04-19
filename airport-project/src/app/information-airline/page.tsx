@@ -58,8 +58,8 @@ export default function AirlineInformation({ searchParams }: {
     }
 }) {
 
-    let departureAirlinesUrl = "https://airport-next-new.vercel.app/api/get-departure-flights-by-airline?airlineName=" + searchParams.airlineName;
-    let arrivalAirlinesUrl = "https://airport-next-new.vercel.app/api/get-arrival-flights-by-airline?airlineName=" + searchParams.airlineName;
+    let departureAirlinesUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/get-departure-flights-by-airline?airlineName=" + searchParams.airlineName;
+    let arrivalAirlinesUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/get-arrival-flights-by-airline?airlineName=" + searchParams.airlineName;
 
     const [departureAirlines, setDepartureAirlines] = useState<Departure[]>([]);
     const [arrivalAirlines, setArrivalAirlines] = useState<Arrival[]>([]);

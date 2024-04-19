@@ -30,4 +30,4 @@ export async function POST(request: NextRequest) {
     }
 }
 
-// https://airport-next-new.vercel.app/api/bookings
+// https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/bookings
