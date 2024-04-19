@@ -16,4 +16,4 @@ export async function GET(request: NextRequest) {
     );
 }
 
-// https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/departures
+// https://airport-next-new.vercel.app/api/departures

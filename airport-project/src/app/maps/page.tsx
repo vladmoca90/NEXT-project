@@ -4,8 +4,8 @@ import { HeathrowMap } from "../../../lib/mapsGettingToTerminals/heathrowMap";
 import { TerminalMap } from "../../../lib/mapsTerminalMaps/terminalMap";
 
 export default function AirportMaps() {
-    let mapsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/maps-getting-to-terminals";
-    let terminalsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/maps-terminals-maps";
+    let mapsUrl = "https://airport-next-new.vercel.app/api/maps-getting-to-terminals";
+    let terminalsUrl = "https://airport-next-new.vercel.app/api/maps-terminals-maps";
 
     const [terminals, setTerminals] = useState<TerminalMap[]>([]);
     const [maps, setMaps] = useState<HeathrowMap[]>([]);

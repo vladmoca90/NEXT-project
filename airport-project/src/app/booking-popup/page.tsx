@@ -3,7 +3,7 @@ import { ChangeEvent, useCallback, useState } from "react";
 import Link from "next/link";
 
 export default function BookingPopUp() {
-    let bookingsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/bookings";
+    let bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
 
     const [surnameText, setSurnameText] = useState("");
     const [bookingText, setBookingText] = useState("");

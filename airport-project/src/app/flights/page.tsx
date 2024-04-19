@@ -46,8 +46,8 @@ const getFlightStatusFriendlyName = (status: FlightStatus) => {
 }
 
 export default function AirportFlights() {
-    let arrivalsUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/arrivals";
-    let departuresUrl = "https://airport-next-3ccx1ojiy-vladmoca90s-projects.vercel.app/api/departures";
+    let arrivalsUrl = "https://airport-next-new.vercel.app/api/arrivals";
+    let departuresUrl = "https://airport-next-new.vercel.app/api/departures";
 
     const [departures, setDepartures] = useState<Departure[]>([]);
     const [arrivals, setArrivals] = useState<Arrival[]>([]);
