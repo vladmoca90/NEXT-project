@@ -84,7 +84,7 @@ export default function AirportSearchBar() {
                                         </li>
                                     );
                                 }
-                                if (result.type === "") {
+                                if (result.type === null) {
                                     return (
                                         <li className="search-bar-list search-flight-airline-error" key={index}>
                                             <Link
