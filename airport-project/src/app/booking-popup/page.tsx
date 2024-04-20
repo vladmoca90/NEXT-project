@@ -8,7 +8,6 @@ export default function BookingPopUp() {
     const [surnameText, setSurnameText] = useState("");
     const [bookingText, setBookingText] = useState("");
 
-    // Two functions that return the text value of the inputs
     const onSurname = useCallback((e: ChangeEvent<HTMLInputElement>) => {
         setSurnameText(e.target.value);
     }, []);
@@ -17,7 +16,6 @@ export default function BookingPopUp() {
         setBookingText(e.target.value);
     }, []);
 
-    // A function that disables or activates the button according to the input text length
     const bookingBtnActive = useCallback(() => {
         if (surnameText.length == 0 || bookingText.length == 0) {
             return `btn btn-booking disabled`;
@@ -26,7 +24,6 @@ export default function BookingPopUp() {
         }
     }, [bookingText, surnameText]);
 
-    // Posting the input value data
     const onClick = useCallback(async () => {
         await fetch(bookingsUrl, {
             method: "POST",

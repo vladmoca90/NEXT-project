@@ -6,7 +6,6 @@ export async function POST(request: NextRequest) {
     const data = await request.json();
 
     const bookingRepository = new BookingRepository();
-
     const flightDetails = bookingRepository.getBooking(data.surname, data.bookingCode);
 
     if (flightDetails === null) {
