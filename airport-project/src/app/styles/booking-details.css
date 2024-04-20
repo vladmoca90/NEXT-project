@@ -184,3 +184,12 @@
 .booking-details-bottom {
     text-align: center;
 }
+
+#returnBtn {
+    margin-top: 1.2em;
+}
+
+#returnBtn .btn {
+    background: #cb2000;
+    font-size: .5em;
+}
