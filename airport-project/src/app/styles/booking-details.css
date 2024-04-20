@@ -186,10 +186,13 @@
 }
 
 #returnBtn {
+    display: inline-block;
     margin-top: 1.2em;
 }
 
-#returnBtn .btn {
+#returnBtn .return-btn {
     background: #cb2000;
-    font-size: .5em;
+    color: #fff;
+    font-size: 1em;
+    padding: .65em 1em;
 }

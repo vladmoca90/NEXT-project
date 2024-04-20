@@ -46,7 +46,7 @@ export default function BookingContent({ searchParams }: {
             <div className="booking-details--not-found">
                 <h3>No booking could be found!</h3>
                 <div id="backBtn">
-                    <a className="btn" href="/">Return to Homepage</a>
+                    <a className="return-btn" href="/">Return to Homepage</a>
                 </div>
             </div>
         );
