@@ -84,14 +84,14 @@ export default function AirportSearchBar() {
                                         </li>
                                     );
                                 }
-                                else {
+                                if (result.type === "") {
                                     return (
                                         <li className="search-bar-list search-flight-airline-error" key={index}>
                                             <Link
                                                 href={{
                                                     pathname: "#",
                                                     query: {
-                                                        "airlineName": "",
+                                                        "": "",
                                                     },
                                                 }}>No flight or airline could be found.
                                             </Link>
