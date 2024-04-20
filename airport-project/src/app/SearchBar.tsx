@@ -84,9 +84,18 @@ export default function AirportSearchBar() {
                                         </li>
                                     );
                                 }
-                                if (!result.type) {
+                                else {
                                     return (
-                                        <li className="search-bar-list search-flight-airline-error" key={index}>No flight or airline could be found</li>
+                                        <li className="search-bar-list search-flight-airline-error" key={index}>
+                                            <Link
+                                                href={{
+                                                    pathname: "#",
+                                                    query: {
+                                                        "airlineName": "",
+                                                    },
+                                                }}>No flight or airline could be found.
+                                            </Link>
+                                        </li>
                                     );
                                 }
                             })
