@@ -84,17 +84,9 @@ export default function AirportSearchBar() {
                                     );
                                 } else {
                                     return (
-                                        <li className="search-bar-list" key={index}>
-                                        <Link
-                                            href={{
-                                                pathname: "/information-",
-                                                query: {
-                                                    "airlineName": result.name,
-                                                },
-                                            }}>
-                                            <Image width={45} height={45} src={result.airlineFin} alt={result.name} />{result.name}
-                                        </Link>
-                                    </li>
+                                        <li className="search-bar-list search-flight-airline-error" key={index}>
+                                            No flight or airline could be found.
+                                        </li>
                                     );
                                 }
                             })
