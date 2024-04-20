@@ -2,5 +2,5 @@ export interface AirlineOrFlight {
     airlineFin: string;
     flightType: "Arrival" | "Departure" | undefined;
     name: string;
-    type: "Airline" | "Flight" | undefined;
+    type: "Airline" | "Flight" | "Any";
 }
