@@ -68,7 +68,8 @@ export default function AirportSearchBar() {
                                             </Link>
                                         </li>
                                     );
-                                } else if (result.type === "Airline") {
+                                } 
+                                if (result.type === "Airline") {
                                     return (
                                         <li className="search-bar-list" key={index}>
                                             <Link
@@ -82,7 +83,8 @@ export default function AirportSearchBar() {
                                             </Link>
                                         </li>
                                     );
-                                } else {
+                                } 
+                                if (result.type === "No airline or flight") {
                                     return (
                                         <li className="search-bar-list search-flight-airline-error" key={index}>
                                             No flight or airline could be found.

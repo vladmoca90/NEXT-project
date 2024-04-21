@@ -5,6 +5,7 @@ import { FlightStatus } from "../../../../lib/searchDepartures/flightStatus";
 
 export async function GET(request: NextRequest) {
     const airlineName = request.nextUrl.searchParams.get("airlineName");
+    
     const noFlights = [
         {
             time: "N/A",

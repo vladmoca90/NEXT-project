@@ -30,6 +30,15 @@ export async function GET(request: NextRequest) {
         };
     });
 
+    const noAirlineFinAndName: AirlineOrFlight[] = airlines.map((airline) => {
+        return {
+            airlineFin: airline.fin,
+            flightType: undefined,
+            name: airline.name,
+            type: "No airline or flight",
+        };
+    });
+
     const departures = allDepartures.filter((departure) => {
         return departure.airlineCode.toLowerCase().startsWith(text.toLowerCase());
     });
@@ -40,6 +49,15 @@ export async function GET(request: NextRequest) {
             flightType: "Departure",
             name: departure.airlineCode,
             type: "Flight",
+        };
+    });
+
+    const noDepartureFinAndName: AirlineOrFlight[] = departures.map((departure) => {
+        return {
+            airlineFin: departure.airlineFin,
+            flightType: "Departure",
+            name: departure.airlineCode,
+            type: "No airline or flight",
         };
     });
 
@@ -56,8 +74,24 @@ export async function GET(request: NextRequest) {
         };
     });
 
-    const flightAndAirlinesList = airlineFinAndName.concat(departureFinAndName);
-    const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalFinAndName);
+    const noArrivalFinAndName: AirlineOrFlight[] = arrivals.map((arrival) => {
+        return {
+            airlineFin: arrival.airlineFin,
+            flightType: "Arrival",
+            name: arrival.airlineCode,
+            type: "No airline or flight",
+        };
+    });
+
+    const airlineOrNoAirline = airlineFinAndName.concat(noAirlineFinAndName);
+    const departureOrNoDeparture = departureFinAndName.concat(noDepartureFinAndName);
+    const arrivalOrNoArrival = arrivalFinAndName.concat(noArrivalFinAndName);
+
+    const flightAndAirlinesList = airlineOrNoAirline.concat(departureOrNoDeparture);
+    const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalOrNoArrival);
+
+
+    //const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalFinAndName);
 
     return NextResponse.json(
         {
