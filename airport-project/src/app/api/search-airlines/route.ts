@@ -30,15 +30,6 @@ export async function GET(request: NextRequest) {
         };
     });
 
-    const noAirlineFinAndName: AirlineOrFlight[] = airlines.map((airline) => {
-        return {
-            airlineFin: "",
-            flightType: undefined,
-            name: "",
-            type: "No airline or flight",
-        };
-    });
-
     const departures = allDepartures.filter((departure) => {
         return departure.airlineCode.toLowerCase().startsWith(text.toLowerCase());
     });
@@ -49,15 +40,6 @@ export async function GET(request: NextRequest) {
             flightType: "Departure",
             name: departure.airlineCode,
             type: "Flight",
-        };
-    });
-
-    const noDepartureFinAndName: AirlineOrFlight[] = departures.map((departure) => {
-        return {
-            airlineFin: "",
-            flightType: "Departure",
-            name: "",
-            type: "No airline or flight",
         };
     });
 
@@ -74,24 +56,8 @@ export async function GET(request: NextRequest) {
         };
     });
 
-    const noArrivalFinAndName: AirlineOrFlight[] = arrivals.map((arrival) => {
-        return {
-            airlineFin: "",
-            flightType: "Arrival",
-            name: "",
-            type: "No airline or flight",
-        };
-    });
-
-    const airlineOrNoAirline = airlineFinAndName.concat(noAirlineFinAndName);
-    const departureOrNoDeparture = departureFinAndName.concat(noDepartureFinAndName);
-    const arrivalOrNoArrival = arrivalFinAndName.concat(noArrivalFinAndName);
-
-    const flightAndAirlinesList = airlineOrNoAirline.concat(departureOrNoDeparture);
-    const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalOrNoArrival);
-
-
-    //const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalFinAndName);
+    const flightAndAirlinesList = airlineFinAndName.concat(departureFinAndName);
+    const flightAndAirlinesListTotal = flightAndAirlinesList.concat(arrivalFinAndName);
 
     return NextResponse.json(
         {
