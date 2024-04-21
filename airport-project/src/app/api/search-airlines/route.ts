@@ -32,9 +32,9 @@ export async function GET(request: NextRequest) {
 
     const noAirlineFinAndName: AirlineOrFlight[] = airlines.map((airline) => {
         return {
-            airlineFin: airline.fin,
+            airlineFin: "",
             flightType: undefined,
-            name: airline.name,
+            name: "",
             type: "No airline or flight",
         };
     });
@@ -54,9 +54,9 @@ export async function GET(request: NextRequest) {
 
     const noDepartureFinAndName: AirlineOrFlight[] = departures.map((departure) => {
         return {
-            airlineFin: departure.airlineFin,
+            airlineFin: "",
             flightType: "Departure",
-            name: departure.airlineCode,
+            name: "",
             type: "No airline or flight",
         };
     });
@@ -76,9 +76,9 @@ export async function GET(request: NextRequest) {
 
     const noArrivalFinAndName: AirlineOrFlight[] = arrivals.map((arrival) => {
         return {
-            airlineFin: arrival.airlineFin,
+            airlineFin: "",
             flightType: "Arrival",
-            name: arrival.airlineCode,
+            name: "",
             type: "No airline or flight",
         };
     });
