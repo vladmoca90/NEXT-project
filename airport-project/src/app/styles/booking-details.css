@@ -192,7 +192,15 @@
 
 #returnBtn .return-btn {
     background: #cb2000;
+    border-radius: 6px;
     color: #fff;
-    font-size: 1em;
-    padding: .65em 1em;
+    font-size: .55em;
+    padding: .5em 1em;
+    transition: linear .5s all;
+}
+
+@media all and (min-width: 992px) {
+    #returnBtn .return-btn:hover {
+        background: #781200;
+    }
 }
