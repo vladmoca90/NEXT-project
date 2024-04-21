@@ -1,9 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import "../styles/booking-details.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useCallback, useEffect, useState } from "react";
 import { Booking } from "../../../lib/booking/booking";
 
 const bookingsUrl = "https://airport-next-new.vercel.app/api/bookings";
+
+const arrowLeft = <FontAwesomeIcon icon={faArrowLeft} />
 
 export default function BookingContent({ searchParams }: {
     searchParams: {
@@ -46,7 +51,7 @@ export default function BookingContent({ searchParams }: {
             <div className="booking-details--not-found">
                 <h3>No booking could be found!</h3>
                 <div id="backBtn">
-                    <a className="return-btn" href="/">Return to Homepage</a>
+                    <a className="return-btn" href="/">{arrowLeft} Return to Homepage</a>
                 </div>
             </div>
         );
