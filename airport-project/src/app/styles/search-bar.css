@@ -122,13 +122,19 @@
 #searchBar .search-bar-content label {
     color: #2b0b50;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
     margin: 1.25em 0 .4em;
     text-transform: uppercase;
 }
 
 @media all and (min-width: 1400px) {
+    #searchBar .search-bar-content label {
+        font-size: 1.3em;
+    }
+}
+
+@media all and (min-width: 1800px) {
     #searchBar .search-bar-content label {
         font-size: 1.4em;
     }
